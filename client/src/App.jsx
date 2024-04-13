@@ -9,7 +9,9 @@ function App() {
     <>
     <BrowserRouter>
     <Home />
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit at ut quas inventore mollitia, nemo ad delectus officiis atque cumque maxime fugiat debitis nulla culpa quod, iure perferendis ea quae!
+
+    <p>FATV</p>
+    {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit at ut quas inventore mollitia, nemo ad delectus officiis atque cumque maxime fugiat debitis nulla culpa quod, iure perferendis ea quae!
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat ab dolore expedita iusto alias iure quidem error magnam odio explicabo ad vero deleniti, sapiente, possimus quam quasi maxime a?
       <p>s</p>
       <p>Trabajo escribiendo. Para medios, para mis libros, para libros de otros.
@@ -46,7 +48,7 @@ Es cierto que no toda la prensa escrita es así. Seguimos teniendo investigació
 Puede que la literatura y el periodismo literario encuentren siempre su espacio, pero no solo de literatura viven los lectores; las noticias, las crónicas, la divulgación científica o de historia, ¿no merecen acaso también de la lectura extendida, fluida, pausada y bien escrita? Pareciera que estamos mirando los textos como imagen.
 
 </p>
-    </p>
+    </p> */}
     </BrowserRouter>
     </>
   )

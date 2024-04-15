@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { loadStripe } from '@stripe/stripe-js';
+import { loadStripe } from '@stripe/stripe-js'
 
 const stripePromise = loadStripe('pk_test_51OZbuNAJTCIGzCMLmd8lD6nH1gzydEczimTPcTeCEvUL0VjkYgy5lHi1cEl1DTSCt5r6HeCS1u5HOPOT4Suxdk7H00ks4nYiQg');
 
 function Btns() {
-    const [donationAmount, setDonationAmount] = useState(0);
+    const [donationAmount, setDonationAmount] = useState(0)
 
     const handleChange = (e) => {
-        setDonationAmount(e.target.value);
+        setDonationAmount(e.target.value)
     };
 
     const handleClick = async () => {
-        const stripe = await stripePromise;
+        const stripe = await stripePromise
 
         
         if (!Number.isNaN(parseFloat(donationAmount))) {
@@ -25,7 +25,7 @@ function Btns() {
                 }),
             });
 
-            const session = await response.json();
+            const session = await response.json()
 
             
             const result = await stripe.redirectToCheckout({

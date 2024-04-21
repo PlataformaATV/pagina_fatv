@@ -3,6 +3,7 @@ import './App.css';
 import Home from './views/Home';
 import Btns from './components/btns-wompi-and-donation/Btns';
 import DonationPay from './views/DonationPay';
+import AboutUs from './components/aboutUs/AboutUs';
 
 function App() {
   return (

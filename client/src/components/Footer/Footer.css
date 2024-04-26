@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(5, 5, 70);
+  color: aliceblue;
+}
+
+footer > div {
+  flex: 1 1 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer-content h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  footer > div {
+    flex: 1 1 100%; /* Cambia a una columna cuando el ancho de la pantalla sea menor a 600px */
+  }
+
+  footer > div:nth-last-child(-n+2) {
+    flex-basis: 50%; /* Divide el espacio en dos columnas para los últimos dos elementos */
+  }
+}

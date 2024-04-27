@@ -27,14 +27,14 @@ function OurAllies() {
   };
 
   return (
-    <div className='flex gap-16 items-center justify-center'>
+    <div className='flex gap-16 items-center justify-center max-md:gap-4 max-lg:gap-6'>
       <button onClick={handlePrev} disabled={startIndex === 0} className='mr-8'>
         <svg className='ml-1 text-blue-300 w-3 h-3' viewBox="0 0 5 8" xmlns="http://www.w3.org/2000/svg">
           <path d="M4.00152 0C4.33112 0.329809 4.659 0.657903 4.9817 0.980827C3.98426 1.97472 2.97715 2.9779 1.9697 3.98143C3.002 5.00696 4.0098 6.00808 5 6.992C4.64278 7.34829 4.31145 7.6781 3.98875 8C2.67516 6.68352 1.33154 5.33712 4.7683e-07 4.00241C1.31597 2.6873 2.65752 1.34537 4.00152 0Z"/>
         </svg>
       </button>
       {logos.slice(startIndex, startIndex + 4).map((logo, index) => (
-        <img className='w-32' key={index} src={logo} alt={`Logo ${index}`} />
+        <img className='w-32 max-md:w-20' key={index} src={logo} alt={`Logo ${index}`} />
       ))}
       <button onClick={handleNext} disabled={startIndex + 4 >= logos.length} className='ml-8'>
         <svg className='ml-1 text-blue-300 w-3 h-3' viewBox="0 0 5 8" xmlns="http://www.w3.org/2000/svg">

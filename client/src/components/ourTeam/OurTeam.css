@@ -1,0 +1,91 @@
+/* OurTeam.css */
+
+.OurTeam-block {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    padding: 5.2941176471em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+  }
+  
+  .OurTeam-block-title {
+    font-size: 7.7647058824em;
+    line-height: 91.25%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    letter-spacing: -0.06em;
+    font-family: "Oswald", sans-serif;
+    color: #33526d;
+    font-weight: bold;
+  }
+  
+  .OurTeam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffba08;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
+  .card {
+    flex: 1 1 calc(25% - 20px); 
+    max-width: calc(25% - 20px); 
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content {
+    display: flex;
+    background-color: #232e55;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ffffff;
+    text-align: left;
+    height: 180px;
+    align-items: flex-end;
+  }
+  
+  .content-info-name {
+    width: 100%;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2.1176470588em;
+    line-height: 90.6666666667%;
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: -0.06em;
+    font-weight: bold;
+  }
+  
+  .content-info-role {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .image img {
+    width: 314.66px;
+    height: 321.06px;
+    object-fit: cover;
+  }
+  

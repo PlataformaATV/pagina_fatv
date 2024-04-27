@@ -165,9 +165,9 @@ function Header() {
       {queHacemos && (
         <div className="text-2xl px-28 bg-blue-links text-white font-bold">
           <ul className='flex items-center justify-between p-5'>
-            <li>ANALÍTICA DE DATOS</li>
-            <li>INTERVENCIÓN SOCIO-EMOCIONAL</li>
-            <li>COMUNICACIONES</li>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>ANALÍTICA DE DATOS</li>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>INTERVENCIÓN SOCIO-EMOCIONAL</li>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>COMUNICACIONES</li>
           </ul>
         </div>
       )}
@@ -175,8 +175,8 @@ function Header() {
 {servicios && (
         <div className="text-2xl px-28 bg-blue-links text-white font-bold">
           <ul className='flex items-center justify-between p-5'>
-            <li>A LOS ESTUDIANTES</li>
-            <li>CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS</li>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>A LOS ESTUDIANTES</li>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS</li>
           </ul>
         </div>
       )}
@@ -184,8 +184,8 @@ function Header() {
 {idioma && (
         <div className="text-2xl px-72 bg-blue-links text-white font-bold">
           <ul className='flex items-center justify-between p-5'>
-            <li>ESP</li>
-            <li>ING</li>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>ESP</li>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>ING</li>
           </ul>
         </div>
       )}

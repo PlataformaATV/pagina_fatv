@@ -10,8 +10,8 @@
 
   .carousel-text {
     position: absolute;
-    top: 45%; /* Ajusta la posición verticalmente */
-    left: 50%; /* Ajusta la posición horizontalmente */
+    top: 45%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
@@ -25,17 +25,17 @@
 
 .carousel-text h1 {
     width: 75%;
-    font-size: 6.5rem; /* Tamaño del texto principal */
-    font-family: "Anton", sans-serif; /* Utiliza la fuente "Anton" para el texto principal */
-    color: #fAA307; /* Color del texto */
-    letter-spacing: -0.02em; /* Espaciado negativo entre letras */
-    line-height: 1; /* Ajusta el espaciado entre líneas para que el texto se junte más verticalmente */
+    font-size: 6.5rem; 
+    font-family: "Anton", sans-serif; 
+    color: #fAA307; 
+    letter-spacing: -0.02em; 
+    line-height: 1; 
 }
 
 
   
   .carousel-text p {
-    font-size: 2rem; /* Tamaño del texto secundario */
+    font-size: 2rem; 
     color: #FFF;
     display: flex;
     width: 97%;
@@ -45,18 +45,16 @@
   
   .carousel-item img {
     max-width: 100%;
-    margin: 15px auto; /* Centra las imágenes horizontalmente */
+    margin: 15px auto; 
   }
 
 
   
-  /* Estilo para los iconos */
+  
 
 
-  .icon-container box-icon {
-    width: 10vw; /* Ajusta el ancho de los iconos */
-    height: 35px; /* Ajusta la altura de los iconos */
-    font-size: 50px; /* Ajusta el tamaño del ícono */
+  .icon-cont{
+    font-size: 50px; 
     }
   
   .banner-container {
@@ -67,10 +65,10 @@
   
   .icon-container {
     position: absolute;
-    bottom: 90px; /* Ajusta la distancia desde la parte inferior */
-    left: 300px; /* Ajusta la distancia desde la parte izquierda */
+    bottom: 90px; 
+    left: 300px; 
     display: flex;
-    gap: 10px; /* Ajusta el espacio entre los iconos si lo necesitas */
+    gap: 10px; 
   }
   
   

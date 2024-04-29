@@ -1,26 +1,43 @@
+/* Footer.css */
 footer {
   display: flex;
   flex-wrap: wrap;
-  background: rgb(5, 5, 70);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: #222D56;
+  width: 100%;
+}
+
+
+.footer-visitanos,
+.footer-contacto,
+.footer-redes {
+  flex: 1;
+  margin: 5px; /* Reducir el margen */
   color: aliceblue;
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  text-align: center; /* Centrar el contenido */
 }
 
-footer > div {
-  flex: 1 1 33.33%;
-  padding: 10px;
-  box-sizing: border-box;
+.logo-footer{
+  width: 200px;
 }
 
-.footer-content h2 {
-  margin-top: 0;
+.footer-copy {
+  width: 100%;
+  margin-top: 20px; /* Espacio entre las secciones y el footer-copy */
+  color: aliceblue;
+  border-top: 0.5px solid white; /* Grosor de la línea */
+  width: 80%; /* Ancho de la línea */
 }
 
-@media (max-width: 600px) {
-  footer > div {
-    flex: 1 1 100%; /* Cambia a una columna cuando el ancho de la pantalla sea menor a 600px */
-  }
 
-  footer > div:nth-last-child(-n+2) {
-    flex-basis: 50%; /* Divide el espacio en dos columnas para los últimos dos elementos */
-  }
+.footer-redirecion {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  background-color: white;
 }

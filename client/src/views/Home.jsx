@@ -5,6 +5,7 @@ import Footer from '../components/Footer/Footer'
 import AboutUs from '../components/aboutUs/AboutUs'
 import OurTeam from '../components/ourTeam/OurTeam'
 import ContextData from '../components/ContextData/ContextData'
+import ServicesATV from '../components/Services_ATV/Services_ATV'
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
     <div>
       <Header />
       <AboutUs />
+      <ServicesATV />
       <OurTeam />
       <ContextData />
       <OurAllies />

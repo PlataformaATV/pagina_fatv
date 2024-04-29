@@ -1,3 +1,3 @@
 FUNDACIÓN ANTIVIRUS 
 
-![Uploading image.png…]()
+![alt text](client/public/image.png)

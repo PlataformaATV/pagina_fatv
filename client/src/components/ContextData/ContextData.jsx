@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContextData.css'; // Importa el archivo CSS
+import './ContextData.css';
 
 const ContextData = () => (
   <div className="context-data-container">

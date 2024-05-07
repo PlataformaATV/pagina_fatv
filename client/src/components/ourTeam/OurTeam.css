@@ -7,6 +7,7 @@
   position: relative;
   padding: 5.2941176471em 0;
   align-items: center; 
+  overflow-x: hidden;
 }
 
 .OurTeam-block-title {

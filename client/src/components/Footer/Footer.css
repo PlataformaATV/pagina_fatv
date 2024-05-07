@@ -1,43 +1,163 @@
-/* Footer.css */
+
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   position: relative;
+  width: 94%;
   background-color: #222D56;
-  width: 100%;
+  color: white;
+  padding: 5% 5% 0% 5%; 
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer-content {
+  width: 100%; 
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-footer{
+  padding-right: 2%;
 }
 
 
 .footer-visitanos,
 .footer-contacto,
 .footer-redes {
-  flex: 1;
-  margin: 5px; /* Reducir el margen */
-  color: aliceblue;
-  font-size: 14px; /* Tamaño de fuente más pequeño */
-  text-align: center; /* Centrar el contenido */
+  display: flex;
+  flex-direction: column; 
+  padding-right: 50px;
+  text-align:left;
 }
 
-.logo-footer{
-  width: 200px;
+.email{
+  display: flex;
 }
+
+
+
 
 .footer-copy {
-  width: 100%;
-  margin-top: 20px; /* Espacio entre las secciones y el footer-copy */
-  color: aliceblue;
-  border-top: 0.5px solid white; /* Grosor de la línea */
-  width: 80%; /* Ancho de la línea */
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1.5px solid white;
+  width: 90%;
+  padding: 3% 0% 3% 0%;
+  margin-left: 5%; 
 }
 
+.footer-visitanos h2,
+.footer-contacto h2,
+.footer-redes h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 200%;
+  letter-spacing: -2px;
+  padding-bottom: 5px;
+}
+
+.footer-redes box-icon {
+  margin-right: 10px; 
+}
 
 .footer-redirecion {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 10%;
-  background-color: white;
+  top: 0;
+  right: -4.5%; 
 }
+
+@media screen and ( min-width: 978px) and (max-width: 1200px) {
+  footer{
+    display: flex;
+    padding: 2% 5% 0% 5%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 979px) {
+  footer {
+    background-color: #222D56;
+    display: flex;
+  }
+
+  .footer-info {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-redes {
+    padding-top: 2%;
+    grid-column: span 2; 
+  }
+
+  .footer-copy{
+    justify-content: space-evenly;
+  }
+
+  .footer-redirecion{
+    right: -6%;
+  }
+}
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 766px) {
+  footer {
+    width: 100%;
+    background-color: #222D56;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .logo-footer{
+    padding-top: 2%;
+    width: 40%;
+  }
+
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+  }
+
+  .footer-visitanos,
+  .footer-contacto {
+  padding-bottom: 10%;
+}
+
+
+  .email {
+    display:block;
+  }
+
+  .footer-redirecion{
+    display: none;
+  }
+
+  .footer-copy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  } 
+
+}
+
+

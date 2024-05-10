@@ -63,7 +63,7 @@ function Header() {
 
   return (
     <div>
-      <header className={`hidden flex lg:flex justify-between items-center py-3 px-8 bg-white fixed w-full transition-all duration-300 ${isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
+      <header className={`hidden z-50 flex lg:flex justify-between items-center py-3 px-8 bg-white fixed w-full transition-all duration-300 ${isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
         <div className='Links-left flex gap-3 items-center'>
           <Link to="/Home" className='text-blue-links font-bold uppercase  transition duration-400 ease-in-out max-xl:text-sm object-contain'>Inicio</Link>
           <span className='text-blue-links mx-1'>|</span>
@@ -114,7 +114,7 @@ function Header() {
       </header>
       
 
-      <div className={`${nav ? 'hidden' :'flex justify-between bg-white items-center px-6 py-2' }`}>
+      <div className={`${nav ? 'hidden' :' flex justify-between bg-white items-center px-6 py-2' }`}>
 
         <div className='logo-responsive-menu'>
         <img
@@ -136,6 +136,7 @@ function Header() {
             ? 'fixed lg:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 p-7'
             : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
         }
+        style={{ zIndex: 30 }}
       >
   
 

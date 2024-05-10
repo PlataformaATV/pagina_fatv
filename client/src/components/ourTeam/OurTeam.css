@@ -41,12 +41,12 @@
   }
   
   .card {
-    flex: 1 1 230px; /* calc(25% - 20px) */
-    max-width: 230px; /* calc(25% - 20px) */
+    flex: 1 1 230px; 
+    max-width: 230px; 
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(75, 49, 49, 0.1);
   }
   
   .content {
@@ -82,5 +82,109 @@
     font-size: 16px; /* 1rem */
     line-height: 24px; /* 1.5rem */
     font-family: "Roboto", sans-serif;
+  }
+  
+
+  @media (max-width: 1200px) {
+    .cards {
+      max-width: 900px;
+    }
+    .OurTeam-block-title {
+      top: -30px;
+      bottom: 50px;
+    }
+  }
+  @media (max-width: 1002px) {
+    .cards {
+      max-width: 600px;
+    }
+    .OurTeam-block-title {
+      font-size: 5em;
+      top: 20px;
+      bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 996px) {
+    .cards {
+      max-width: 600px;
+    }
+    .OurTeam-block-title {
+      font-size: 5em;
+      top: 20px;
+      bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      max-width: 400px;
+
+    }
+    .card {
+      margin-right: 10px;
+    }
+    .OurTeam-block-title {
+      font-size: 4.5em;
+      top: 20px;
+      bottom: 10px;
+    }
+  }
+  @media (max-width: 586px) {
+    .cards {
+      max-width: 300px;
+    }
+
+    .OurTeam-block-title {
+      font-size: 4em;
+      top: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .cards {
+      max-width: 300px;
+    }
+
+    .OurTeam-block-title {
+      font-size: 4em;
+      top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cards {
+      max-width: 250px;
+    }
+  
+    .OurTeam-block-title {
+      font-size: 3em;
+      top: 40px;
+    }
+  
+    .card {
+      flex: 1 1 200px;
+      max-width: 200px;
+    }
+  
+    .content {
+      padding: 8px;
+      height: 150px;
+    }
+  
+    .content-info-name {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+  
+    .content-info-role {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .image img {
+      width: 200px;
+      height: 200px;
+    }
   }
   

@@ -63,22 +63,22 @@ function Header() {
 
   return (
     <div>
-      <header className={`hidden z-50 flex lg:flex justify-between items-center py-3 px-8 bg-white fixed w-full transition-all duration-300 ${isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
+      <header className={`hidden z-50 flex lg:flex justify-between items-center py-3 px-8 max-md:py-2 bg-white fixed w-full transition-all duration-300 ${isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
         <div className='Links-left flex gap-3 items-center'>
-          <Link to="/Home" className='text-blue-links font-bold uppercase  transition duration-400 ease-in-out max-xl:text-sm object-contain'>Inicio</Link>
+          <Link to="/Home" className='text-blue-links  font-extrabold uppercase  transition duration-400 ease-in-out max-xl:text-sm object-contain'>Inicio</Link>
           <span className='text-blue-links mx-1'>|</span>
-          <Link to="/Fundacion" className='text-blue-links font-oswald font-semibold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm'>FUNDACIÓN</Link>
+          <Link to="/Fundacion" className='text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm'>FUNDACIÓN</Link>
           <span className='text-blue-links mx-1'>|</span>
-          <button onClick={handleClikPopupQH} className='flex items-center text-blue-links font-oswald font-semibold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm'>QUÉ HACEMOS
+          <button onClick={handleClikPopupQH} className='flex items-center text-blue-links  font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm'>QUÉ HACEMOS
           </button>
           <span className='text-blue-links mx-1'>|</span>
-          <button onClick={handleClikPopupServices} to="/Servicios" className='text-blue-links font-oswald font-semibold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm'>SERVICIOS</button>
+          <button onClick={handleClikPopupServices} to="/Servicios" className='text-blue-links  font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm'>SERVICIOS</button>
 
         </div>
 
         <div className='logo'>
           <img
-            className="h-28 object-contain max-xl:h-24"
+            className="h-28 object-contain max-xl:h-24 max-lg:h-14"
             src="/logo.png"
             alt="logo"
           />
@@ -86,11 +86,11 @@ function Header() {
 
 
         <div className='Links-right flex gap-3 items-center'>
-          <Link to="/Noticias" className='text-blue-links font-oswald font-semibold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm'>NOTICIAS</Link>
+          <Link to="/Noticias" className='text-blue-links  font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm'>NOTICIAS</Link>
           <span className='text-blue-links mx-1'>|</span>
-          <Link to="/Fundacion" className='text-blue-links font-oswald font-semibold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm'>CONTACTANOS</Link>
+          <Link to="/Fundacion" className='text-blue-links  font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm'>CONTACTANOS</Link>
           <span className='text-blue-links mx-1'>|</span>
-          <button onClick={handleClikPopupIdioma} className='flex items-center justify-center text-blue-links font-oswald font-semibold uppercase leading-none transition duration-400 ease-in-out'>
+          <button onClick={handleClikPopupIdioma} className='flex items-center justify-center text-blue-links  font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
             ESP
             <svg className='ml-1 text-blue-300 w-3 h-3' viewBox="0 0 5 8" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.998481 8C0.668876 7.67019 0.340995 7.3421 0.0182923 7.01917C1.01574 6.02528 2.02285 5.0221 3.0303 4.01857C1.998 2.99304 0.990198 1.99192 0 1.008C0.357217 0.651707 0.688548 0.321898 1.01125 0C2.32484 1.31648 3.66846 2.66288 5 3.99759C3.68503 5.3127 2.34348 6.65463 0.998481 8Z"></path>
@@ -118,14 +118,14 @@ function Header() {
 
         <div className='logo-responsive-menu'>
         <img
-            className="h-28 object-contain max-xl:h-24"
+            className="h-28 object-contain max-sm:h-16"
             src="/logo.png"
             alt="logo"
           />
         </div>
 
       <div onClick={handleNav} className='block lg:hidden'>
-        {nav ? <AiOutlineClose size={50} /> : <AiOutlineMenu size={38} />}
+        {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu className='hover:cursor-pointer' size={30} />}
       </div>
 
       </div>
@@ -139,24 +139,18 @@ function Header() {
         style={{ zIndex: 30 }}
       >
   
-
+ 
         <div className='header-navbar-responsive flex justify-between items-center'>
 
-          <div className='logo'>
-        <img
-            className="h-28 object-contain max-xl:h-24"
-            src="/logo.png"
-            alt="logo"
-          />
-          </div>
+  
 
-          <AiOutlineClose onClick={handleNav} size={40} /> 
+          <AiOutlineClose onClick={handleNav} size={30} className='hover:cursor-pointer absolute right-0 pr-2 text-blue-600' /> 
           </div>
 
         {navItems.map(item => (
           <li
             key={item.id}
-            className='p-4 text-blue-links font-oswald font-semibold uppercase leading-none transition duration-400 ease-in-out'
+            className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'
           >
             {item.text}
           </li>

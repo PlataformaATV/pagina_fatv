@@ -4,23 +4,31 @@
   flex-direction: column;
   background-color: #fff;
   width: 100%;
+  position: relative;
   padding: 5.2941176471em 0;
   align-items: center; 
-  overflow-x: hidden;
+  margin: 150px 0 0 0;
 }
 
 .OurTeam-block-title {
+  text-rendering: optimizeLegibility;
   font-size: 7.7647058824em;
-  line-height: 91.25%;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1em;
-  letter-spacing: -0.06em;
+  line-height: 92%;
+  font: 50px;
+  letter-spacing: -0.09em;
   font-family: "Oswald", sans-serif;
   color: #33526d;
   font-weight: bold;
+  position: absolute;
+  margin: 10px auto;
   top: -50px;
 
+}
+.OurTeam-block-title h3{
+  line-height: 92%;
 }
 
 .OurTeam {
@@ -28,6 +36,7 @@
   padding: 1rem;
   width: 100%;
   height: 650px;
+  
 }
 
 
@@ -37,15 +46,17 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 100px;
+    
+    
   }
   
   .card {
     flex: 1 1 230px; 
-    max-width: 230px; 
-    border-radius: 10px;
+    max-width: 270px; 
     overflow: hidden;
     margin: 10px;
-    box-shadow: 0 4px 6px rgba(75, 49, 49, 0.1);
+    
+    
   }
   
   .content {
@@ -62,14 +73,17 @@
     width: 314.66px;
     height: 321.06px;
     object-fit: cover;
+    
   }
   
+  
   .content-info-name {
+    text-rendering: optimizeLegibility;
     width: 100%;
     display: flex;
     text-transform: uppercase;
     color: #fff;
-    font-size: 34px; /* 2.1176470588em */
+    font-size: 34px; 
     line-height: 90.6666666667%;
     margin-bottom: 10px;
     font-family: "Oswald", sans-serif;
@@ -78,8 +92,9 @@
   }
   
   .content-info-role {
-    font-size: 16px; /* 1rem */
-    line-height: 24px; /* 1.5rem */
+    text-rendering: optimizeLegibility;
+    font-size: 16px; 
+    line-height: 24px; 
     font-family: "Roboto", sans-serif;
   }
   
@@ -89,18 +104,11 @@
       max-width: 900px;
     }
     .OurTeam-block-title {
-      top: -30px;
-      bottom: 50px;
-    }
-  }
-  @media (max-width: 1002px) {
-    .cards {
-      max-width: 600px;
-    }
-    .OurTeam-block-title {
-      font-size: 5em;
-      top: 20px;
+      top: -40px;
       bottom: 10px;
+    }
+    .card{
+      margin: 10px;
     }
   }
   
@@ -108,9 +116,12 @@
     .cards {
       max-width: 600px;
     }
+    .card{
+      margin: 30px;
+    }
     .OurTeam-block-title {
-      font-size: 5em;
-      top: 20px;
+      font-size: 6em;
+      top: 15px;
       bottom: 10px;
     }
   }
@@ -124,7 +135,7 @@
       margin-right: 10px;
     }
     .OurTeam-block-title {
-      font-size: 4.5em;
+      font-size: 4.7em;
       top: 20px;
       bottom: 10px;
     }
@@ -157,8 +168,8 @@
     }
   
     .OurTeam-block-title {
-      font-size: 3em;
-      top: 40px;
+      font-size: 4em;
+      top: 30px;
     }
   
     .card {
@@ -186,4 +197,3 @@
       height: 200px;
     }
   }
-  

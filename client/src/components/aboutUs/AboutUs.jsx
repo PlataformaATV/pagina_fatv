@@ -23,8 +23,7 @@ function AboutUs() {
             </strong>
           </p>
           <a className="right-content-link" href="/AboutUs.jsx">
-            Conoce más aquí
-            <img src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/arrow.svg" alt=""/>
+            Conoce más aquí<img src="https://www.fundacionantivirusparaladesercion.org/assets/img/icons/arrow.svg" alt=""/>
           </a>
         </div>
       </div>

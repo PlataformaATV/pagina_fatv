@@ -1,14 +1,14 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import banner1 from "../../assets/Banner/banner1.jpeg";
-import banner2 from "../../assets/Banner/banner2.jpeg";
-import banner3 from "../../assets/Banner/banner3.jpeg";
-import banner4 from "../../assets/Banner/banner4.jpeg";
-import banner5 from "../../assets/Banner/banner5.jpeg";
-import banner6 from "../../assets/Banner/banner6.jpeg";
-import banner7 from "../../assets/Banner/banner7.jpeg";
-import banner8 from "../../assets/Banner/banner8.jpeg"
+import banner1 from "../../assets/Banner/banner1c.jpeg";
+import banner2 from "../../assets/Banner/banner2c.jpeg";
+import banner3 from "../../assets/Banner/banner3c.jpeg";
+import banner4 from "../../assets/Banner/banner4c.jpeg";
+import banner5 from "../../assets/Banner/banner5c.jpeg";
+import banner6 from "../../assets/Banner/banner6c.jpeg";
+import banner7 from "../../assets/Banner/banner7c.jpeg";
+import banner8 from "../../assets/Banner/banner8c.jpeg"
 import "./Banner.css";
 
 

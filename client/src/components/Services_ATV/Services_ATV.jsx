@@ -55,7 +55,7 @@ const ServicesATV = () => {
     <div className='md:w-1/2 '>
         <div className='flex gap-16 items-center justify-center md:max-w-full md:h-auto md:flex-col md:gap-6' style={{ width: '100%', height: '100%', transform: `translateX(0%)` }}>
           {imgs.map((logo, index) => (
-            <div key={index} className={`w-full h-full ${index === startIndex ? '' : 'hidden'}`}>
+            <div key={index} className={`w-full h-full  ${index === startIndex ? '' : 'hidden'}`}>
               <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
                 <img
                   src={logo}
@@ -70,6 +70,7 @@ const ServicesATV = () => {
     </div>
     <div className="containerBtnServ flex flex-row justify-end">
       <div className='flex justify-end'>
+        <div className='flex w-fit px-12'>
         <div className='contNext flex bg-content h-40 flex-col justify-center text-center'>
           <div className='mx-16 w-full'>
             <div className='text-xl'>
@@ -79,6 +80,7 @@ const ServicesATV = () => {
           <p className='text-white text-left leading-4 font-bold'>servicios</p>
           </div>
         </div>
+        </div>
       </div>
       <div className="btn_Serv flex justify-end">
           <div className='flex justify-between'>
@@ -87,7 +89,7 @@ const ServicesATV = () => {
               <path d="M4.37031 6.28395C4.83133 6.28395 5.08628 6.28395 5.33991 6.28395C8.02414 6.28395 10.7084 6.28129 13.3926 6.28793C13.6753 6.28926 13.9699 6.30917 14.2354 6.39278C14.7928 6.56797 15.0267 7.00462 14.9976 7.56869C14.9672 8.14602 14.6383 8.50968 14.0874 8.63975C13.8563 8.69416 13.6066 8.67691 13.3649 8.67691C10.6806 8.67956 7.9964 8.67558 5.31217 8.68222C5.06118 8.68222 4.8102 8.73132 4.40069 8.77512C4.64111 9.08967 4.77321 9.30335 4.94362 9.47722C6.04003 10.5961 7.14701 11.7029 8.24475 12.8205C8.87882 13.4668 8.92902 14.0694 8.41251 14.6175C7.89072 15.1709 7.23684 15.1258 6.56974 14.4702C4.5711 12.5072 2.5751 10.5416 0.58438 8.57206C-0.191036 7.80493 -0.194998 7.2475 0.573813 6.48038C2.57246 4.48691 4.57638 2.49742 6.58427 0.513238C7.2157 -0.111879 7.86959 -0.16364 8.37552 0.346009C8.92901 0.903437 8.88542 1.52723 8.22757 2.19614C7.12984 3.31232 6.02154 4.41922 4.92644 5.53806C4.75604 5.70927 4.63319 5.92428 4.37031 6.28395Z" fill="#7C78B3"/>
             </svg>
           </button>
-          <button className='btnRigth px-14' onClick={handleClickNext}>
+          <button className='btnRigth px-16' onClick={handleClickNext}>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
               <path d="M10.6297 8.71617C10.1687 8.71617 9.91372 8.71617 9.66009 8.71617C6.97586 8.71617 4.29162 8.71883 1.60739 8.71219C1.3247 8.71087 1.03012 8.69096 0.764605 8.60734C0.207152 8.43215 -0.0266621 7.9955 0.00239946 7.43143C0.032782 6.8541 0.361706 6.49044 0.912555 6.36038C1.14373 6.30596 1.39339 6.32321 1.63513 6.32321C4.31936 6.32056 7.0036 6.32454 9.68783 6.3179C9.93882 6.3179 10.1898 6.2688 10.5993 6.225C10.3589 5.91045 10.2268 5.69677 10.0564 5.52291C8.95997 4.40407 7.85299 3.29717 6.75525 2.17966C6.12118 1.53331 6.07098 0.930758 6.58749 0.38262C7.10928 -0.170826 7.76316 -0.125701 8.43026 0.529941C10.4289 2.49288 12.4249 4.45848 14.4156 6.42806C15.191 7.19519 15.195 7.75262 14.4262 8.51975C12.4275 10.5132 10.4236 12.5027 8.41572 14.4869C7.7843 15.112 7.13041 15.1638 6.62448 14.6541C6.07098 14.0967 6.11458 13.4729 6.77242 12.804C7.87016 11.6878 8.97846 10.5809 10.0736 9.46207C10.244 9.29086 10.3668 9.07585 10.6297 8.71617Z" fill="#7C78B3"/>
             </svg>

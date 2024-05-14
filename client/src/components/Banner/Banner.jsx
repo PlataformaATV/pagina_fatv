@@ -23,7 +23,7 @@ const Banner = () => {
           <img className="d-block w-100 h-100" src={banner1} alt="Slide 1" />
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
-            <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
+            <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS.</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>

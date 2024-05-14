@@ -16,6 +16,7 @@ export default {
       },
       fontFamily: {
         'oswald': ['Oswald'],
+        'roboto': ['Roboto']
       },
     },
   },

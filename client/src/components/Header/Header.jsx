@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import 'boxicons'
 import { Link } from 'react-router-dom';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import '../Header/Header.css'
 
 function Header() {
   const [isHidden, setIsHidden] = useState(false);
   const [nav, setNav] = useState(false);
-  const [queHacemos, setQueHacemos] = useState(false)
+  const [queHacemos, setQueHacemos] = useState(false);
   const [servicios, setServicios] = useState(false);
-  const [idioma, setIdioma] = useState(false)
+  const [idioma, setIdioma] = useState(false);
+  const [popupPosition, setPopupPosition] = useState('9rem');
 
   const handleNav = () => {
     setNav(!nav);
   };
-
 
   const handleClikPopupQH = () => {
     setQueHacemos(!queHacemos);
@@ -39,52 +39,51 @@ function Header() {
     { id: 3, text: 'QUE HACEMOS' },
     { id: 4, text: 'SERVICIOS' },
     { id: 5, text: 'NOTICIAS' },
-    { id: 6, text: 'CONTACTANOS'}
+    { id: 6, text: 'CONTACTANOS' }
   ];
 
   useEffect(() => {
     let lastScrollTop = 0;
-
+  
     const handleScroll = () => {
       const currentScroll = window.pageYOffset;
-      if (currentScroll > lastScrollTop) {
-        setIsHidden(true);
-      } else {
+      const isScrollingUp = currentScroll < lastScrollTop;
+  
+      if (isScrollingUp || currentScroll <= 0) {
         setIsHidden(false);
+        setPopupPosition('9rem');
+      } else {
+        setIsHidden(true);
+        setPopupPosition('0');
       }
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      lastScrollTop = currentScroll;
     };
-
+  
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
+
+
 
   return (
     <div>
       <header className={`hidden z-50 flex lg:flex justify-between items-center py-3 px-16 max-md:py-2 bg-white fixed w-full transition-all duration-300 ${isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
         <div className='Links-left flex gap-1 items-center'>
-         <Link to="/Home" className='text-title font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain' style={{ letterSpacing: '-1px' }}>Inicio</Link>
-
+          <Link to="/Home" className='text-title font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain' style={{ letterSpacing: '-1px' }}>Inicio</Link>
           <span className='text-blue-links mx-1'>|</span>
           <Link to="/Fundacion" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>FUNDACIÓN</Link>
           <span className='text-title mx-1'>|</span>
-          <button onClick={handleClikPopupQH} className='flex items-center text-title  font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>QUÉ HACEMOS
-          </button>
+          <button onClick={handleClikPopupQH} className='flex items-center text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>QUÉ HACEMOS</button>
           <span className='text-title mx-1'>|</span>
-          <button onClick={handleClikPopupServices} to="/Servicios" className='text-title  font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>SERVICIOS</button>
-
+          <button onClick={handleClikPopupServices} className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>SERVICIOS</button>
         </div>
 
         <div className='logo'>
-          <img
-            className="h-28 object-contain max-xl:h-24 max-lg:h-14"
-            src="/logo.png"
-            alt="logo"
-          />
+          <img className="h-28 object-contain max-xl:h-24 max-lg:h-14" src="/logo.png" alt="logo" />
         </div>
-
 
         <div className='Links-right flex gap-3 items-center'>
           <Link to="/Noticias" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>NOTICIAS</Link>
@@ -98,37 +97,23 @@ function Header() {
             </svg>
           </button>
 
-
           <button className='flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2 px-3'>
             <div className="flex items-center">
               Apóyanos
               <box-icon name='gift' color='#eae9e9'></box-icon>
             </div>
           </button>
-          
-
-          {/* <box-icon name='menu'></box-icon> */}
-
-
         </div>
-
       </header>
-      
 
-      <div className={`${nav ? 'hidden' :' flex justify-between bg-white items-center px-6 py-2' }`}>
-
+      <div className={`${nav ? 'hidden' : 'flex justify-between bg-white items-center px-6 py-2'}`}>
         <div className='logo-responsive-menu'>
-        <img
-            className="h-28 object-contain max-sm:h-16"
-            src="/logo.png"
-            alt="logo"
-          />
+          <img className="h-28 object-contain max-sm:h-16" src="/logo.png" alt="logo" />
         </div>
 
-      <div onClick={handleNav} className='block lg:hidden'>
-        {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu className='hover:cursor-pointer' size={30} />}
-      </div>
-
+        <div onClick={handleNav} className='block lg:hidden'>
+          {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu className='hover:cursor-pointer' size={30} />}
+        </div>
       </div>
 
       <ul
@@ -139,53 +124,46 @@ function Header() {
         }
         style={{ zIndex: 30 }}
       >
-  
- 
         <div className='header-navbar-responsive flex justify-between items-center'>
-
-  
-
-          <AiOutlineClose onClick={handleNav} size={30} className='hover:cursor-pointer absolute right-0 pr-2 text-blue-600' /> 
-          </div>
+          <AiOutlineClose onClick={handleNav} size={30} className='hover:cursor-pointer absolute right-0 pr-2 text-blue-600' />
+        </div>
 
         {navItems.map(item => (
-          <li
-            key={item.id}
-            className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'
-          >
+          <li key={item.id} className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
             {item.text}
           </li>
         ))}
       </ul>
 
       {queHacemos && (
-        <div className="text-2xl px-28 bg-blue-links text-white font-bold">
-          <ul className='flex items-center justify-between p-5'>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>ANALÍTICA DE DATOS</li>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>INTERVENCIÓN SOCIO-EMOCIONAL</li>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>COMUNICACIONES</li>
-          </ul>
-        </div>
-      )}
+  <div className="fixed left-0 right-0 bg-blue-links text-white font-bold z-50 popup-animation" style={{ top: popupPosition }}>
+    <ul className='flex items-center justify-between p-5'>
+      <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ANALÍTICA DE DATOS</li>
+      <Link to="/intervencion/fortalecimiento-academico" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INTERVENCIÓN SOCIO-EMOCIONAL</Link>
+      <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</li>
+    </ul>
+  </div>
+)}
+
 
 {servicios && (
-        <div className="text-2xl px-28 bg-blue-links text-white font-bold">
-          <ul className='flex items-center justify-between p-5'>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>A LOS ESTUDIANTES</li>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS</li>
-          </ul>
-        </div>
-      )}
+  <div className="fixed left-0 items-center right-0 bg-blue-links text-white font-bold z-50 popup-animation" style={{ top: popupPosition }}>
+    <ul className='flex items-center justify-between p-5'>
+      <Link className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>Consultorías e implementación de proyectos</Link>
+      <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</li>
+    </ul>
+  </div>
+)}
+
 
 {idioma && (
-        <div className="text-2xl px-72 bg-blue-links text-white font-bold">
-          <ul className='flex items-center justify-between p-5'>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>ESP</li>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300'>ING</li>
-          </ul>
-        </div>
-      )}
-      
+  <div className="fixed left-0 right-0 bg-blue-links text-white font-bold z-50 popup-animation" style={{ top: popupPosition }}>
+    <ul className='flex items-center justify-between p-5'>
+      <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INGLÉS</li>
+      <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ESPAÑOL</li>
+    </ul>
+  </div>
+)}
     </div>
   );
 }

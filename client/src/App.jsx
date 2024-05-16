@@ -5,6 +5,7 @@ import Btns from './components/btns-wompi-and-donation/Btns';
 import DonationPay from './views/DonationPay';
 import ContextData from './components/ContextData/ContextData';
 import AboutUs from './components/aboutUs/AboutUs';
+import QHFA from './views/QHFA';
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/DonationPay" element={<DonationPay />} />
+          <Route path="/intervencion/fortalecimiento-academico" element={<QHFA />} />
         </Routes>
       </div>
     </BrowserRouter>

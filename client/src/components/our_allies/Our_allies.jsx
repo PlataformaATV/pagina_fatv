@@ -8,7 +8,7 @@ function OurAllies() {
     '/logos_alianzas/DiseтФЬтЦТo sin tтФЬ╨╜tulo (1).png',
     '/logos_alianzas/DiseтФЬтЦТo sin tтФЬ╨╜tulo (3).png',
     '/logos_alianzas/Logo Aurelio Llano_Mesa de trabajo 1.png',
-    '/logos_alianzas/Imagen de WhatsApp 2024-02-20 a las 17.20.00_75cbf97c.jpg',
+    '/logos_alianzas/Imagen_de_WhatsApp_2024-02-20_a_las_17.20.00_75cbf97c-removebg-preview.png',
     '/logos_alianzas/Logo CтФЬтФВdigo C13_Mesa de trabajo 1.png',
     '/logos_alianzas/logo_Beca Tech Negro.png',
     '/logos_alianzas/unnamed.png',

@@ -72,7 +72,7 @@ function Header() {
     <div>
       <header className={`hidden z-50 flex lg:flex justify-between items-center py-3 px-16 max-md:py-2 bg-white fixed w-full transition-all duration-300 ${isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
         <div className='Links-left flex gap-1 items-center'>
-          <Link to="/Home" className='text-title font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain' style={{ letterSpacing: '-1px' }}>Inicio</Link>
+          <Link to="/" className='text-title font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain' style={{ letterSpacing: '-1px' }}>Inicio</Link>
           <span className='text-blue-links mx-1'>|</span>
           <Link to="/Fundacion" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>FUNDACIÓN</Link>
           <span className='text-title mx-1'>|</span>

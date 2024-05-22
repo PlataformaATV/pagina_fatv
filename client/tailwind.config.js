@@ -22,6 +22,9 @@ export default {
       },
       letterSpacing: {
         'nm': '0.3em'
+      },
+      width: {
+        '450': '28.125rem'
       }
     },
   },

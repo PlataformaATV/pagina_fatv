@@ -9,7 +9,7 @@ import emocional3 from '../../public/img_viewQHav/sociopedagogical-image-3.jpg'
 
 function QHFA() {
   return (
-    <div>
+    <div className='max-w-screen-xl'>
       <Header />
 
       <div className="relative">
@@ -19,7 +19,7 @@ function QHFA() {
           NUESTRO MODELO
         </h1>
 
-        <div className="absolute bottom-0 left-8 p-4 flex space-x-4">
+        <div className="absolute bottom-0 left-8 p-4 flex space-x-4 ">
           <a href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
             <box-icon className="box-icon" name='facebook-circle' type='logo' color='#ffffff'></box-icon>
           </a>
@@ -39,7 +39,7 @@ function QHFA() {
       </div>
 
       
-      <div className='mx-24 my-20'>
+      <div className='mx-28 my-20 max-w-screen-xl'>
 
       <div className="flex gap-12">
         <div className='w-[46%]'>

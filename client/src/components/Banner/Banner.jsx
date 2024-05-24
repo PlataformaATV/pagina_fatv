@@ -77,21 +77,21 @@ const Banner = () => {
         </Carousel.Item>
       </Carousel >
       <div className="icon-container">
-        <a href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
-          <box-icon className="box-icon" name='facebook-circle' type='logo' color='#ffffff' ></box-icon>
-        </a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-          <box-icon className="box-icon" name='instagram-alt' type='logo' color='#ffffff' ></box-icon>
-        </a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-          <box-icon className="box-icon" name='youtube' type='logo' color='#ffffff' ></box-icon>
-        </a>
-        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
-          <box-icon className="box-icon" name='tiktok' type='logo' color='#ffffff' ></box-icon>
-        </a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-         <box-icon className="box-icon" name='linkedin-square' type='logo' color='#ffffff' ></box-icon>
-        </a>
+      <a href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+            <box-icon className="box-icon" name='facebook-circle' type='logo' color='#ffffff'></box-icon>
+          </a>
+          <a href="https://www.instagram.com/somosantivirus/" target="_blank" rel="noopener noreferrer">
+            <box-icon className="box-icon" name='instagram-alt' type='logo' color='#ffffff'></box-icon>
+          </a>
+          <a href="https://www.youtube.com/channel/UCCDsmMeIqSWGk_fh1m9FX0w" target="_blank" rel="noopener noreferrer">
+            <box-icon className="box-icon" name='youtube' type='logo' color='#ffffff'></box-icon>
+          </a>
+          <a href="https://www.tiktok.com/@somosantivirus" target="_blank" rel="noopener noreferrer">
+            <box-icon className="box-icon" name='tiktok' type='logo' color='#ffffff'></box-icon>
+          </a>
+          <a href="https://www.linkedin.com/company/antivirus-desercion/" target="_blank" rel="noopener noreferrer">
+            <box-icon className="box-icon" name='linkedin-square' type='logo' color='#ffffff'></box-icon>
+          </a>
       </div>
     </div>
   );

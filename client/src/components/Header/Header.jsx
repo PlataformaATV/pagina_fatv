@@ -138,7 +138,7 @@ function Header() {
       {queHacemos && (
   <div className="fixed left-0 right-0 bg-blue-links text-white font-bold z-50 popup-animation" style={{ top: popupPosition }}>
     <ul className='flex items-center justify-between p-5'>
-      <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ANALÍTICA DE DATOS</li>
+      <Link to="/dataAnalyctis" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ANALÍTICA DE DATOS</Link>
       <Link to="/intervencion/fortalecimiento-academico" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INTERVENCIÓN SOCIO-EMOCIONAL</Link>
       <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</li>
     </ul>

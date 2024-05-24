@@ -12,11 +12,13 @@ export default {
         'title' : '#33526d',
         'ourteam' : '#ffba08',
         'content' : '#232e55',
+        'banner' : '#faa307'
         
       },
       fontFamily: {
         'oswald': ['Oswald'],
-        'roboto': ['Roboto']
+        'roboto': ['Roboto'],
+        'anton' : ['Anton']
       },
     },
   },

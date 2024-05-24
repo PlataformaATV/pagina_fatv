@@ -48,8 +48,8 @@ function OurTeam() {
                 <div className="image">
                   <img src={card.image} alt={card.name} />
                 </div>
-                <div className="content">
-                  <div className="content-info">
+                <div className="OurTeam-content">
+                  <div className="OurTeam-content-info">
                     <h5 className="content-info-name">{card.name}</h5>
                     <p className="content-info-role">{card.role}</p>
                   </div>

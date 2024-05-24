@@ -59,7 +59,7 @@
     
   }
   
-  .content {
+  .OurTeam-content {
     display: flex;
     background-color: #232e55;
     padding: 16px; /* 1rem */
@@ -177,7 +177,7 @@
       max-width: 200px;
     }
   
-    .content {
+    .OurTeam-content {
       padding: 8px;
       height: 150px;
     }

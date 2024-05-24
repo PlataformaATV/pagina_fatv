@@ -9,10 +9,10 @@ import emocional3 from '../../public/img_viewQHav/sociopedagogical-image-3.jpg'
 
 function QHFA() {
   return (
-    <div className='max-w-screen-xl'>
+    <div className=''>
       <Header />
 
-      <div className="relative">
+      <div className="relative ">
         <img src={imgBanner} alt="Banner" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
         <h1 className="absolute inset-0 flex items-center justify-center text-h1-banner uppercase text-8xl font-anton">

@@ -30,7 +30,7 @@ const ServicesATV = () => {
 
   return (
     <div>
-    <div className='flex  flex-row'>
+    <div className='flex  flex-row '>
       <div className='flex flex-col bg-content  md:flex-row md:gap-96 text-white tracking-tighter text-xl w-3/5'>
       <div className='md:py-20 md:pb-20 md:pl-24 '>
         <div className='flex gap-4 pb-2 tracking-[.3em]'> 
@@ -67,9 +67,11 @@ const ServicesATV = () => {
           ))}
         </div>
       </div>
+
+      
     </div>
-    <div className="containerBtnServ flex flex-row justify-end">
-      <div className='flex justify-end'>
+    <div className="relative w-full flex justify-end max-w-screen-2xl">
+      <div className='flex'>
         <div className='contNext flex bg-content h-40 flex-col justify-center text-center'>
           <div className='mx-16 w-full'>
             <div className='text-xl'>
@@ -80,7 +82,7 @@ const ServicesATV = () => {
           </div>
         </div>
       </div>
-      <div className="btn_Serv flex justify-end">
+      <div className="btn_Serv flex mr-3">
           <div className='flex justify-between'>
           <button className='btnLeft px-14' onClick={handleClickPrev}>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">

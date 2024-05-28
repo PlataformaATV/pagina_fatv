@@ -6,6 +6,7 @@ import DonationPay from './views/DonationPay';
 import ContextData from './components/ContextData/ContextData';
 import AboutUs from './components/aboutUs/AboutUs';
 import QHFA from './views/QHFA';
+import Foundation from './views/Foundation'
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/DonationPay" element={<DonationPay />} />
           <Route path="/intervencion/fortalecimiento-academico" element={<QHFA />} />
+          <Route path='/Fundacion'  element={<Foundation/>}/>
         </Routes>
       </div>
     </BrowserRouter>

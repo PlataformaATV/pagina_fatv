@@ -17,59 +17,59 @@ const Banner = () => {
   
 
   return (
-    <div className="banner-container">
+    <div className="banner-container h-2/3">
       <Carousel className='carousel'>
         <Carousel.Item>
-          <img className="d-block w-100 h-100" src={banner1} alt="Slide 1" />
+          <img className="d-block w-100 h-full" src={banner1} alt="Slide 1" />
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS.</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-100" src={banner2} alt="Slide 2" />
+          <img className="d-block w-100 h-full" src={banner2} alt="Slide 2" />
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-100" src={banner3} alt="Slide 3" />
+          <img className="d-block w-100 h-full" src={banner3} alt="Slide 3" />
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-100" src={banner4} alt="Slide 4" />
+          <img className="d-block w-100 h-full" src={banner4} alt="Slide 4" />
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-100" src={banner5} alt="Slide 5" />
+          <img className="d-block w-100 h-full" src={banner5} alt="Slide 5" />
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-100" src={banner6} alt="Slide 6" />
+          <img className="d-block w-100 h-full" src={banner6} alt="Slide 6" />
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-100" src={banner7} alt="Slide 7" />
+          <img className="d-block w-100 h-full" src={banner7} alt="Slide 7" />
           <div className="carousel-text" >
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-100" src={banner8} alt="Slide 7" />
+          <img className="d-block w-100 h-full" src={banner8} alt="Slide 7" />
           <div className="carousel-text" >
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>

@@ -7,6 +7,7 @@ import ContextData from './components/ContextData/ContextData';
 import AboutUs from './components/aboutUs/AboutUs';
 import QHFA from './views/QHFA';
 import DataAnalytics from './views/DataAnalytics';
+import Foundation from './views/Foundation';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/DonationPay" element={<DonationPay />} />
           <Route path="/intervencion/fortalecimiento-academico" element={<QHFA />} />
           <Route path='/dataAnalyctis' element={<DataAnalytics />} />
+          <Route path='/fundacion' element={<Foundation />}/>
         </Routes>
       </div>
     </BrowserRouter>

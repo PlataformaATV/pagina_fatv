@@ -9,8 +9,6 @@ import QHFA from './views/QHFA';
 import DataAnalytics from './views/DataAnalytics';
 import Foundation from './views/Foundation';
 
-
-
 function App() {
   return (
     <BrowserRouter>

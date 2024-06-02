@@ -3,9 +3,10 @@ import FoundationATV from "../components/Foundation/FoundationATV";
 
 function Foundation() {
   return (
-    <div>
+    <div className="Foundation-container">
         <Header />
         <FoundationATV />
+        
     </div>
   )
 }

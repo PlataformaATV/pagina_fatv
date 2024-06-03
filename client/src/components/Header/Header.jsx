@@ -88,7 +88,7 @@ function Header() {
         <div className='Links-right flex gap-3 items-center'>
           <Link to="/Noticias" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>NOTICIAS</Link>
           <span className='text-title mx-1'>|</span>
-          <Link to="/Fundacion" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>CONTACTANOS</Link>
+          <Link to="/ContactUs" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>CONTÁCTENOS</Link>
           <span className='text-title mx-1'>|</span>
           <button onClick={handleClikPopupIdioma} className='flex items-center justify-center text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out' style={{ letterSpacing: '-1px' }}>
             ESP

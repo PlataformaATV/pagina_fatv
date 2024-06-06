@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import '../Header/Header.css'
-
 function Header() {
   const [isHidden, setIsHidden] = useState(false);
   const [nav, setNav] = useState(false);
@@ -13,6 +12,7 @@ function Header() {
 
   const handleNav = () => {
     setNav(!nav);
+    closePopups();
   };
 
   const handleClikPopupQH = () => {
@@ -33,22 +33,28 @@ function Header() {
     setServicios(false);
   };
 
+  const closePopups = () => {
+    setQueHacemos(false);
+    setServicios(false);
+    setIdioma(false);
+  };
+
   const navItems = [
-    { id: 1, text: 'Home' },
-    { id: 2, text: 'FUNDACION' },
-    { id: 3, text: 'QUE HACEMOS' },
-    { id: 4, text: 'SERVICIOS' },
-    { id: 5, text: 'NOTICIAS' },
-    { id: 6, text: 'CONTACTANOS' }
+    { id: 1, text: 'Home', link: '/' },
+    { id: 2, text: 'FUNDACION', link: '/Fundacion' },
+    { id: 3, text: 'QUE HACEMOS'},
+    { id: 4, text: 'SERVICIOS',},
+    { id: 5, text: 'NOTICIAS', link: '/Noticias' },
+    { id: 6, text: 'CONTACTANOS', link: '/ContactUs' }
   ];
 
   useEffect(() => {
     let lastScrollTop = 0;
-  
+
     const handleScroll = () => {
       const currentScroll = window.pageYOffset;
       const isScrollingUp = currentScroll < lastScrollTop;
-  
+
       if (isScrollingUp || currentScroll <= 0) {
         setIsHidden(false);
         setPopupPosition('9rem');
@@ -58,15 +64,19 @@ function Header() {
       }
       lastScrollTop = currentScroll;
     };
-  
+
+    const handleResize = () => {
+      closePopups();
+    };
+
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
-  
-
-
 
   return (
     <div>
@@ -111,7 +121,7 @@ function Header() {
           <img className="h-28 object-contain max-sm:h-16" src="/logo.png" alt="logo" />
         </div>
 
-        <div onClick={handleNav} className='block lg:hidden'>
+        <div onClick={handleNav} className=' block lg:hidden'>
           {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu className='hover:cursor-pointer' size={30} />}
         </div>
       </div>
@@ -130,40 +140,83 @@ function Header() {
 
         {navItems.map(item => (
           <li key={item.id} className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
-            {item.text}
+            <Link to={item.link} onClick={handleNav}>{item.text}</Link>
           </li>
         ))}
+
+        <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out cursor-pointer' onClick={handleClikPopupQH}>
+          QUÉ HACEMOS
+        </li>
+        {queHacemos && (
+          <ul className='pl-4'>
+            <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
+              <Link to="/dataAnalyctis" onClick={handleNav}>ANALÍTICA DE DATOS</Link>
+            </li>
+            <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
+              <Link to="/intervencion/fortalecimiento-academico" onClick={handleNav}>INTERVENCIÓN SOCIO-EMOCIONAL</Link>
+            </li>
+            <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
+              COMUNICACIONES
+            </li>
+          </ul>
+        )}
+
+        <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out cursor-pointer' onClick={handleClikPopupServices}>
+          SERVICIOS
+        </li>
+        {servicios && (
+          <ul className='pl-4'>
+            <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
+              CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS
+            </li>
+            <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
+              COMUNICACIONES
+            </li>
+          </ul>
+        )}
+
+        <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out cursor-pointer' onClick={handleClikPopupIdioma}>
+          IDIOMA
+        </li>
+        {idioma && (
+          <ul className='pl-4'>
+            <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
+              INGLÉS
+            </li>
+            <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
+              ESPAÑOL
+            </li>
+          </ul>
+        )}
       </ul>
 
       {queHacemos && (
-  <div className="fixed left-0 right-0 bg-blue-links text-white font-bold z-50 popup-animation" style={{ top: popupPosition }}>
-    <ul className='flex items-center justify-between p-5'>
-      <Link to="/dataAnalyctis" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ANALÍTICA DE DATOS</Link>
-      <Link to="/intervencion/fortalecimiento-academico" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INTERVENCIÓN SOCIO-EMOCIONAL</Link>
-      <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</li>
-    </ul>
-  </div>
-)}
+        <div className="fixed left-0 right-0 bg-blue-links text-white font-bold z-50 popup-animation text-3xl font-anton" style={{ top: popupPosition }}>
+          <ul className='flex items-center justify-between p-10'>
+            <Link to="/dataAnalyctis" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ANALÍTICA DE DATOS</Link>
+            <Link to="/intervencion/fortalecimiento-academico" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INTERVENCIÓN SOCIO-EMOCIONAL</Link>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</li>
+          </ul>
+        </div>
+      )}
 
+      {servicios && (
+        <div className="fixed left-0 items-center right-0 bg-blue-links text-white font-bold z-50 popup-animation text-3xl font-anton" style={{ top: popupPosition }}>
+          <ul className='flex items-center justify-between p-10'>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS</li>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</li>
+          </ul>
+        </div>
+      )}
 
-{servicios && (
-  <div className="fixed left-0 items-center right-0 bg-blue-links text-white font-bold z-50 popup-animation" style={{ top: popupPosition }}>
-    <ul className='flex items-center justify-between p-5'>
-      <Link className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>Consultorías e implementación de proyectos</Link>
-      <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</li>
-    </ul>
-  </div>
-)}
-
-
-{idioma && (
-  <div className="fixed left-0 right-0 bg-blue-links text-white font-bold z-50 popup-animation" style={{ top: popupPosition }}>
-    <ul className='flex items-center justify-between p-5'>
-      <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INGLÉS</li>
-      <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ESPAÑOL</li>
-    </ul>
-  </div>
-)}
+      {idioma && (
+        <div className="fixed left-0 items-center right-0 bg-blue-links text-white font-bold z-50 popup-animation text-3xl font-anton" style={{ top: popupPosition }}>
+          <ul className='flex items-center justify-between p-10'>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INGLÉS</li>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ESPAÑOL</li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

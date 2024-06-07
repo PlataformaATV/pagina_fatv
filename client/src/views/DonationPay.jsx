@@ -60,7 +60,25 @@ function DonationPay() {
                 </div>
 
                 <div className='flex flex-col gap-6 mt-14 pl-10'>
+
+                <b>Concepto de Fundación Antivirus para la Deserción</b>
+
+                <div className='flex flex-col'>
+
+                   <select>
+                    <option value="opción" disabled>Seleccione una opción</option>
+                    <option value="">Donación a estudiante</option>
+                    <option value="">Donación a la Fundación </option>
+                    <option value="">Pago por servicio de provocación</option>
+                   </select>
+
+                
+
+
+                </div>
+
                     <h1 className='font-bold text-3xl mb-16'>Ingresa el monto a pagar</h1>
+
                     <p className='text-center text-gray-700'>Monto a pagar</p>
                     <input className='w-full h-16 rounded-xl border border-gray-300 hover:border-blue-300 text-center mb-8' type="number" min="0" step="0.01" value={donationAmount} onChange={handleChange} />
                     <div className='flex items-center'>

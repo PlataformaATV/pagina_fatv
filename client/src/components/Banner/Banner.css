@@ -62,11 +62,11 @@
 
 
   
-#carousel-container .carousel-item img {
+.carousel-item img {
   max-width: 100%;
   margin: 15px auto; 
-  height: 650px !important; /* Altura fija */
-  object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+  height: 650px !important; 
+  object-fit: cover; 
 }
 
   
@@ -94,7 +94,7 @@
   position: relative;
   width: 30px;
   height: 30px;
-  margin-top: 50px; /* Ajusta este valor según sea necesario */
+  margin-top: 50px; 
 }
 
 

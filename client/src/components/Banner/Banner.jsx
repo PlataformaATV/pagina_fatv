@@ -20,7 +20,7 @@ const Banner = () => {
       <Carousel className='carousel'>
         <Carousel.Item>
 
-          <div id="carousel-container" className='containerImg'>
+          <div  className='containerImg'>
           <img className="d-block w-100 h-100" src={banner1} alt="Slide 1" />
           </div>
 
@@ -31,7 +31,7 @@ const Banner = () => {
         </Carousel.Item>
         <Carousel.Item>
 
-          <div id="carousel-container" className='containerImg'>
+          <div  className='containerImg'>
           <img className="d-block w-100 h-100" src={banner2} alt="Slide 2" />
           </div>
 
@@ -42,7 +42,7 @@ const Banner = () => {
         </Carousel.Item>
         <Carousel.Item>
 
-          <div id="carousel-container" className='containerImg'>
+          <div  className='containerImg'>
           <img className="d-block w-100 h-100" src={banner3} alt="Slide 3" />
           </div>
           <div className="carousel-text">
@@ -52,7 +52,7 @@ const Banner = () => {
         </Carousel.Item>
         <Carousel.Item>
 
-          <div id="carousel-container" className='containerImg'>
+          <div  className='containerImg'>
           <img className="d-block w-100 h-100" src={banner4} alt="Slide 4" />
           </div>
 
@@ -63,7 +63,7 @@ const Banner = () => {
         </Carousel.Item>
         <Carousel.Item>
 
-          <div id="carousel-container" className='containerImg'>
+          <div  className='containerImg'>
           <img className="d-block w-100 h-100" src={banner5} alt="Slide 5" />
           </div>
 
@@ -74,7 +74,7 @@ const Banner = () => {
         </Carousel.Item>
         <Carousel.Item>
 
-          <div id="carousel-container" className='containerImg'>
+          <div  className='containerImg'>
           <img className="d-block w-100 h-100" src={banner6} alt="Slide 6" />
           </div>
 
@@ -85,7 +85,7 @@ const Banner = () => {
         </Carousel.Item>
         <Carousel.Item>
 
-          <div id="carousel-container" className='containerImg'>
+          <div  className='containerImg'>
           <img className="d-block w-100 h-100" src={banner7} alt="Slide 7" />
           </div>
 
@@ -96,7 +96,7 @@ const Banner = () => {
         </Carousel.Item>
         <Carousel.Item>
 
-          <div id="carousel-container" className='containerImg'>
+          <div  className='containerImg'>
           <img className="d-block w-100 h-100" src={banner8} alt="Slide 7" />
           </div>
 

@@ -3,8 +3,12 @@ import './App.css';
 import Home from './views/Home';
 import Btns from './components/btns-wompi-and-donation/Btns';
 import DonationPay from './views/DonationPay';
-
-
+import ContextData from './components/ContextData/ContextData';
+import AboutUs from './components/aboutUs/AboutUs';
+import QHFA from './views/QHFA';
+import DataAnalytics from './views/DataAnalytics';
+import Foundation from './views/Foundation';
+import ContacUs from './views/ContacUs';
 
 function App() {
   return (
@@ -14,6 +18,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/DonationPay" element={<DonationPay />} />
+          <Route path="/intervencion/fortalecimiento-academico" element={<QHFA />} />
+          <Route path='/dataAnalyctis' element={<DataAnalytics />} />
+          <Route path='/fundacion' element={<Foundation />}/>
+          <Route path='/ContactUs' element={<ContacUs />} />
         </Routes>
       </div>
     </BrowserRouter>

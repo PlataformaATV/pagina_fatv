@@ -12,64 +12,94 @@ import banner8 from "../../assets/Banner/banner8c.jpeg"
 import "./Banner.css";
 
 
+
 const Banner = () => {
   
-  
-
   return (
     <div className="banner-container h-2/3">
       <Carousel className='carousel'>
         <Carousel.Item>
-          <img className="d-block w-100 h-full" src={banner1} alt="Slide 1" />
+
+          <div id="carousel-container" className='containerImg'>
+          <img className="d-block w-100 h-100" src={banner1} alt="Slide 1" />
+          </div>
+
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS.</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-full" src={banner2} alt="Slide 2" />
+
+          <div id="carousel-container" className='containerImg'>
+          <img className="d-block w-100 h-100" src={banner2} alt="Slide 2" />
+          </div>
+
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-full" src={banner3} alt="Slide 3" />
+
+          <div id="carousel-container" className='containerImg'>
+          <img className="d-block w-100 h-100" src={banner3} alt="Slide 3" />
+          </div>
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-full" src={banner4} alt="Slide 4" />
+
+          <div id="carousel-container" className='containerImg'>
+          <img className="d-block w-100 h-100" src={banner4} alt="Slide 4" />
+          </div>
+
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-full" src={banner5} alt="Slide 5" />
+
+          <div id="carousel-container" className='containerImg'>
+          <img className="d-block w-100 h-100" src={banner5} alt="Slide 5" />
+          </div>
+
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-full" src={banner6} alt="Slide 6" />
+
+          <div id="carousel-container" className='containerImg'>
+          <img className="d-block w-100 h-100" src={banner6} alt="Slide 6" />
+          </div>
+
           <div className="carousel-text">
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-full" src={banner7} alt="Slide 7" />
+
+          <div id="carousel-container" className='containerImg'>
+          <img className="d-block w-100 h-100" src={banner7} alt="Slide 7" />
+          </div>
+
           <div className="carousel-text" >
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100 h-full" src={banner8} alt="Slide 7" />
+
+          <div id="carousel-container" className='containerImg'>
+          <img className="d-block w-100 h-100" src={banner8} alt="Slide 7" />
+          </div>
+
           <div className="carousel-text" >
             <h1>FOMENTAMOS LA PERMANENCIA ESTUDIANTIL</h1>
             <p>A TRAVÉS DEL APOYO SOCIOPEDAGÓGICO, LAS COMUNICACIONES Y LA ANALÍTICA DE DATOS</p>

@@ -119,10 +119,37 @@ function FoundationATV() {
         )}
         </div>
       </div>
-      
       <OurTeam/>
-      <Footer/>
+      <div className='foundation_values--cnt'>
+        <div className='foundation_values--content'>
+          <h5>TEORÍA DEL CAMBIO</h5>
+          <p>Identificar estudiantes con vulnerabilidades y acompañarlos integralmente, a través de un ecosistema de estrategias centrado en lo académico, económico y socioemocional para la permanencia.</p>
 
+          <h5>MISIÓN</h5>
+          <p>Aumentar las tasas de graduación de estudiantes de carreras y programas en áreas de tecnología, a través de estrategias de promoción de la permanencia y prevención de la deserción.</p>
+
+          <h5>VISIÓN</h5>
+          <p>En 5 años vamos a tener presencia a nivel nacional, en las 10 mejores universidades del país, donde habremos disminuido la tasa de deserción en 10 puntos porcentuales (del 50 al 40%). Además, vamos a estar replicando un modelo que es referente, cuyo éxito se puede medir cualitativa y cuantitativamente.</p>
+
+          <h5>PROPÓSITO</h5>
+          <p>Construir un país próspero, pacífico, armonioso, tecnológico y competitivo, en el cual todos los jóvenes tienen acceso a la educación y son buenos seres humanos, con metas y empoderados de sus vidas. Gracias a esto, lograremos superar la pobreza y nos convertiremos en un referente de desarrollo.</p>
+
+          <h5>VALORES</h5>
+          <p>En la Fundación Antivirus para la Deserción hacemos nuestro trabajo de forma colaborativa, con pasión, integridad, autonomía, empatía, compromiso y compañerismo. Somos solidarios e innovadores y tenemos una gran vocación de servicio.</p>
+
+          <h5>PÚBLICO OBJETIVO</h5>
+          <p>Trabajamos con estudiantes de carreras y programas TI de Educación Media y Postsecundaria. Enfocamos nuestra intervención en estudiantes vulnerables a la deserción.</p>
+
+          <h5>PRIORIDADES</h5>
+          <ul>
+            <li>Consolidar un modelo con procesos de identificación de vulnerabilidades, intervención e indicadores de resultados.</li>
+            <li>Explorar modelos de intervención desde los colegios para aportar a reducir la deserción en educación superior.</li>
+            <li>Conocer e involucrar a otros actores en el trabajo por la permanencia (Rectores, Decanos, MEN, Empresas, entre otros).</li>
+            <li>Ayudar a reducir la deserción en otras universidades y programas para afinar nuestro modelo y generar ingresos que aporten a la sostenibilidad de la Fundación Antivirus.</li>
+          </ul>
+        </div>
+      </div>
+      <Footer/>
     </div>
   )
 }

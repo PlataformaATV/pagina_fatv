@@ -13,7 +13,8 @@ export default {
         'ourteam' : '#ffba08',
         'content' : '#232e55',
         'banner' : '#faa307' ,
-        'h1-banner': '#f8b732'
+        'h1-banner': '#f8b732',
+        'cc': '#33526d;'
         
       },
       fontFamily: {

@@ -8,6 +8,7 @@ import AboutUs from './components/aboutUs/AboutUs';
 import QHFA from './views/QHFA';
 import DataAnalytics from './views/DataAnalytics';
 import Foundation from './views/Foundation';
+import ContacUs from './views/ContacUs';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/intervencion/fortalecimiento-academico" element={<QHFA />} />
           <Route path='/dataAnalyctis' element={<DataAnalytics />} />
           <Route path='/fundacion' element={<Foundation />}/>
+          <Route path='/ContactUs' element={<ContacUs />} />
         </Routes>
       </div>
     </BrowserRouter>

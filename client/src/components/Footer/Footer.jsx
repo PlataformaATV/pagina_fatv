@@ -25,8 +25,7 @@ function Footer() {
               <p>.org</p>
               </div>
               <br />
-              <p>WhatsApp: +57</p>
-              <p>3226367781</p>
+              <p>WhatsApp: +57 3226367781</p>
             </div>
             <div className='footer-redes'>
               <h2>Nuestras redes sociales</h2>
@@ -51,7 +50,7 @@ function Footer() {
           </div>
         </div>
         <div className='footer-copy'>
-            <p>Antivirus para la Desercion © 2024 all rights reserved</p>
+            <p>Antivirus para la Deserción © 2024 all rights reserved</p>
             <p>Política de protección de datos</p>
         </div>
         <div className='footer-redirecion'> {/* Movemos el div del botón de redirección aquí */}

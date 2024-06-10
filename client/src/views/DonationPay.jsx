@@ -29,7 +29,7 @@ function DonationPay() {
         const publicKey = document.createElement('input');
         publicKey.type = 'hidden';
         publicKey.name = 'public-key';
-        publicKey.value = 'pub_prod_QLT03iLvO8zXLhnDqsda5OFkCtXBhu2H'; 
+        publicKey.value = import.meta.env.VITE_WOMPI_PUBLIC_KEY;; 
         form.appendChild(publicKey);
 
         const currency = document.createElement('input');

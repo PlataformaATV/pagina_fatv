@@ -87,8 +87,9 @@ function FoundationATV() {
       </div>
       </div>
 
-      <div className='flex flex-row mx-auto space-x-10 justify-end'>
-        <div className='relative'>
+      <div className='flex justify-end'>
+        <div className='contVideoF flex flex-row '>
+        <div className='relative flex mr-6 '>
           <picture style={{ height: '100%' }}>
             <img src={imgF2} alt="img2" style={{ objectFit: 'cover', height: '100%' }}/>
             <div className='iconGrande absolute inset-0 flex items-center justify-center'>
@@ -99,12 +100,12 @@ function FoundationATV() {
           </picture>
         </div>
         <div className='relative w-auto h-1/2 overflow-hidden' style={{ height: '100%' }}>
-          <img src={imgF3} alt="img3" className='w-full h-full' style={{ clipPath: 'inset(0 25% 0 0)', objectFit: 'cover' }} />
+          <img src={imgF3} alt="img3" className='w-full h-full img3' style={{ clipPath: 'inset(0 25% 0 0)', objectFit: 'cover' }} />
         </div>
         {isOpen && (
           <div className="popup-overlay" style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0, 0, 0, 0.5)', zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <div className="popup-content" style={{ position: 'relative', maxWidth: '90%', maxHeight: '90%' }}>
-              <button onClick={closePopup} style={{ position: 'absolute', top: '10px', right: '10px', background: 'none', border: 'none', fontSize: '24px', color: 'white', cursor: 'pointer', zIndex: 10000 }}>
+              <button onClick={closePopup} className='buttonF' style={{ position: 'absolute', top: '-40px', right: '0%', background: 'none', border: 'none', fontSize: '24px', color: 'white', cursor: 'pointer', zIndex: 10000 }}>
               &times;
               </button>
               <iframe
@@ -116,6 +117,7 @@ function FoundationATV() {
             </div>
           </div>
         )}
+        </div>
       </div>
       
       <OurTeam/>

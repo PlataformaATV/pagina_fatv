@@ -1,6 +1,121 @@
 .subtitle {
   display: flex;
 }
+
+/*Fundation_team*/ 
+.foundation_team {
+  width: 80%;
+  position: relative;
+  display: block;
+  margin: 0 auto; 
+  font-family: "Roboto", sans-serif;
+  padding: 5.2941176471em 0;
+}
+
+.foundation_team--cnt .foundation_team--content {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(8, calc(12.5% - 5.25px));
+  grid-template-rows: auto auto;
+  gap: 6px;
+  align-content: center;
+  justify-content: end;
+  align-items: center;
+  justify-items: end;
+}
+
+.foundation_team--cnt .foundation_team--content .foundation_team--block {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  padding: 40px 50px;
+  background: #232e55;
+}
+
+.foundation_team--cnt .foundation_team--content .foundation_team--block:nth-child(1) {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+.foundation_team--cnt .foundation_team--content .foundation_team--block:nth-child(2) {
+  grid-column: 4 / 9;
+  grid-row: 1;
+}
+
+.foundation_team--cnt .foundation_team--content .foundation_team--block:nth-child(3) {
+  grid-column: 1 / 5;
+  grid-row: 2;
+}
+
+.foundation_team--cnt .foundation_team--content .foundation_team--block:nth-child(4) {
+  grid-column: 5 / 9;
+  grid-row: 2;
+}
+
+.foundation_team--cnt .foundation_team--content .foundation_team--block ._title small {
+  color: #7c78b3;
+  font-size: 0.8823529412em;
+  line-height: 153.3333333333%;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+}
+
+.foundation_team--cnt .foundation_team--content .foundation_team--block ._title h5, .foundation_team--cnt .foundation_team--content .foundation_team--block ._title h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.1176470588em;
+  line-height: 91.6666666667%;
+  letter-spacing: -0.06em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.foundation_team--cnt .foundation_team--content .foundation_team--block ._members {
+  column-count: 2;
+  column-gap: 15px;
+  page-break-inside: avoid;
+}
+
+.foundation_team--cnt .foundation_team--content .foundation_team--block ._members p strong {
+  color: inherit;
+  display: block;
+}
+
+.foundation_team--cnt .foundation_team--content .foundation_team--block ._members p {
+  width: 100%;
+  position: relative;
+  display: block;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 0.8823529412em;
+  break-inside: avoid;
+}
+
+@media screen and (max-width: 768px) {
+  .foundation_team--cnt .foundation_team--content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foundation_team--cnt .foundation_team--content .foundation_team--block:nth-child(2) {
+    order: -1; 
+    margin-top: 20px; 
+  }
+
+  .foundation_team--cnt .foundation_team--content .foundation_team--block:nth-child(3) {
+    order: 1; 
+    margin-top: 20px; 
+  }
+
+  .foundation_team--cnt .foundation_team--content .foundation_team--block:nth-child(4) {
+    order: 2; 
+    margin-top: 20px; 
+  }
+}
+
 /* Foundation video */
 @media screen and (min-width: 798px) and (max-width: 1100px) {
   .contVideoF {
@@ -57,6 +172,7 @@
       max-width: 600px; 
       max-height: 338px; 
   }
+  
 }
 /* Mision y vision */
 .foundation_values--cnt {

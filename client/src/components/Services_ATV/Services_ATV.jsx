@@ -29,30 +29,33 @@ const ServicesATV = () => {
 
 
   return (
-    <div>
-    <div className='flex  flex-row'>
-      <div className='flex flex-col bg-content  md:flex-row md:gap-96 text-white tracking-tighter text-xl w-3/5'>
+    <div className='w-full flex flex-col items-center justify-center'>
+    <div className=''>
+    <div className='flex flex-row'>
+      <div className='flex flex-col p-10 bg-content text-white tracking-tighter text-xl w-3/5 max-md:text-lg max-md:w-full'>
       <div className='md:py-20 md:pb-20 md:pl-24 '>
         <div className='flex gap-4 pb-2 tracking-[.3em]'> 
           <svg xmlns="http://www.w3.org/2000/svg" width="60" height="43" viewBox="0 0 60 43" fill="none">
             <path d="M0 42.9277V0.107147C0.426178 0.0750296 0.809471 0.0215006 1.19544 0.0215006C6.53741 0.0161476 11.8794 0.0348828 17.2214 8.89307e-05C18.0255 -0.00526397 18.5213 0.230264 18.9529 0.915436C19.9982 2.57484 21.1669 4.15394 22.1961 5.8187C22.6545 6.5574 23.1691 6.7956 24.0268 6.79292C31.9526 6.75813 39.8758 6.77151 47.8017 6.77151C48.2868 6.77151 48.7746 6.77151 49.426 6.77151V15.85H60C59.8445 16.3719 59.7614 16.7413 59.6247 17.0919C56.3708 25.3809 53.0954 33.6645 49.8736 41.9669C49.5546 42.7859 49.1418 43.0027 48.319 43C32.604 42.9786 16.8863 42.9839 1.17132 42.9812C0.825553 42.9812 0.477105 42.9491 0 42.925L0 42.9277ZM6.65267 38.3403C7.10029 38.3751 7.3174 38.4072 7.53719 38.4072C20.1376 38.4072 32.738 38.3992 45.3384 38.4313C46.1747 38.4313 46.4963 38.0994 46.7697 37.3928C48.8068 32.1657 50.8787 26.9493 52.9346 21.7302C53.0766 21.3716 53.1677 20.9942 53.3312 20.4723C51.4979 20.4723 49.82 20.4723 48.1394 20.4723C37.0963 20.4723 26.0558 20.4883 15.0127 20.4455C13.9379 20.4402 13.4528 20.7533 13.1016 21.7704C12.3645 23.9169 11.4666 26.0072 10.6384 28.1216C9.32767 31.4725 8.01966 34.8234 6.64731 38.3429L6.65267 38.3403ZM44.8238 11.3429C44.2126 11.3429 43.7275 11.3429 43.2397 11.3429C37.6297 11.3429 32.0197 11.3456 26.4123 11.3429C24.4557 11.3429 22.1532 11.9478 20.6335 11.1234C19.0654 10.2723 18.138 8.08298 17.149 6.35399C16.3315 4.92744 15.321 4.48582 13.7235 4.55541C10.7161 4.68656 7.69533 4.59288 4.66384 4.59288V30.4929C6.5535 26.1678 8.31986 21.8426 9.93076 17.4613C10.3998 16.1873 11.0217 15.8554 12.327 15.8634C22.6116 15.925 32.8961 15.8982 43.178 15.8982H44.8211V11.3456L44.8238 11.3429Z" fill="white"/>
           </svg>
           <div>
-            <h3 className='whitespace-pre text-sm'>PRESTAMOS          LOS </h3>
+            <h3 className='whitespace-pre text-sm'>PRESTAMOS LOS </h3>
             <h3 className='text-sm'>SIGUIENTES SERVICIOS</h3>
           </div>
         </div>
 
         <div className='flex flex-col gap-5 mr-0'>
           <div className='flex'>
-            <h1 className='text-7xl font-extrabold'>APOYO <br/> ACADÉMICO</h1>
+            <h1 className='text-7xl font-extrabold max-md:text-2xl max-lg:text-3xl'>APOYO <br/> ACADÉMICO</h1>
           </div>
           <p>Ofrecemos servicios especializados que tienen como objetivo implementar:</p>
           <p className='font-bold'>Tutorías / Nivélate con Antivirus / Grupos de Estudio</p>
         </div>
       </div>
     </div>
-    <div className='md:w-1/2 '>
+
+
+    <div className='md:w-1/2 max-md:hidden'>
         <div className='flex gap-16 items-center justify-center md:max-w-full md:h-auto md:flex-col md:gap-6' style={{ width: '100%', height: '100%', transform: `translateX(0%)` }}>
           {imgs.map((logo, index) => (
             <div key={index} className={`w-full h-full ${index === startIndex ? '' : 'hidden'}`}>
@@ -67,19 +70,28 @@ const ServicesATV = () => {
           ))}
         </div>
       </div>
+
+
     </div>
-    <div className="containerBtnServ flex flex-row justify-end">
-      <div className='flex justify-end'>
+
+    <div className='flex items-center justify-center ml-[40rem] max-md:flex-col max-md:ml-[0rem] max-md:items-start max-md:justify-start max-lg:ml-[2rem]
+    max-xl: '>
+
+      <div className=''>
         <div className='contNext flex bg-content h-40 flex-col justify-center text-center'>
-          <div className='mx-16 w-full'>
+          <div className='mx-10 w-full max-xl:mx-2'>
+
             <div className='text-xl'>
               <p className='text-white text-left leading-4 font-roboto '>Sabemos cómo ayudarte</p>
             </div>
+
           <p className='text-white text-left font-bold '>Conoce nuestros</p>
           <p className='text-white text-left leading-4 font-bold'>servicios</p>
           </div>
         </div>
       </div>
+
+
       <div className="btn_Serv flex justify-end">
           <div className='flex justify-between'>
           <button className='btnLeft px-14' onClick={handleClickPrev}>
@@ -94,6 +106,7 @@ const ServicesATV = () => {
           </button>
           </div>
       </div>
+    </div>
     </div>
     </div>
   );

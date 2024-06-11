@@ -18,6 +18,9 @@ export default {
         'oswald': ['Oswald'],
         'roboto': ['Roboto']
       },
+      margin: {
+        '128px': '128px'
+      }
     },
   },
   plugins: [],

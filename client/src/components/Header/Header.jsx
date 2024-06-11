@@ -191,8 +191,8 @@ function Header() {
       </ul>
 
       {queHacemos && (
-        <div className="fixed left-0 right-0 bg-blue-links text-white font-bold z-50 popup-animation text-3xl font-anton" style={{ top: popupPosition }}>
-          <ul className='flex items-center justify-between p-10'>
+        <div className="fixed left-0 right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton" style={{ top: popupPosition }}>
+          <ul className='flex items-center justify-center gap-20 p-10'>
             <Link to="/dataAnalyctis" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ANALÍTICA DE DATOS</Link>
             <Link to="/intervencion/fortalecimiento-academico" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INTERVENCIÓN SOCIO-EMOCIONAL</Link>
             <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</li>
@@ -201,17 +201,17 @@ function Header() {
       )}
 
       {servicios && (
-        <div className="fixed left-0 items-center right-0 bg-blue-links text-white font-bold z-50 popup-animation text-3xl font-anton" style={{ top: popupPosition }}>
-          <ul className='flex items-center justify-between p-10'>
+        <div className="fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton" style={{ top: popupPosition }}>
+          <ul className='flex items-center justify-center gap-20 p-10'>
+            <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>A LOS ESTUDIANTES</li>
             <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS</li>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</li>
           </ul>
         </div>
       )}
 
       {idioma && (
-        <div className="fixed left-0 items-center right-0 bg-blue-links text-white font-bold z-50 popup-animation text-3xl font-anton" style={{ top: popupPosition }}>
-          <ul className='flex items-center justify-between p-10'>
+        <div className="fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton" style={{ top: popupPosition }}>
+          <ul className='flex items-center justify-center gap-20 p-10'>
             <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INGLÉS</li>
             <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ESPAÑOL</li>
           </ul>

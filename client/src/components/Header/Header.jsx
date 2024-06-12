@@ -195,7 +195,7 @@ function Header() {
           <ul className='flex items-center justify-center gap-20 p-10'>
             <Link to="/dataAnalyctis" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ANALÍTICA DE DATOS</Link>
             <Link to="/intervencion/fortalecimiento-academico" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INTERVENCIÓN SOCIO-EMOCIONAL</Link>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</li>
+            <Link to="/comunicaciones" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>COMUNICACIONES</Link>
           </ul>
         </div>
       )}

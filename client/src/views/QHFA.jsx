@@ -101,7 +101,7 @@ function QHFA() {
           </div>
 
           <div className='flex flex-col md:flex-row relative '>
-            <div className='w-full md:w-1/2'>
+            <div className='w-full md:w-1/2 pr-7'>
               <h1 className='font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8'>Acompañamiento psicoemocional y sociopedagógico:</h1>
               <p>Esta área está encargada de:</p>
               <ul>

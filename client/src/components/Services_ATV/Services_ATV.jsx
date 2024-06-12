@@ -29,9 +29,10 @@ const ServicesATV = () => {
 
 
   return (
-    <div>
-    <div className='flex  flex-row '>
-      <div className='flex flex-col bg-content  md:flex-row md:gap-96 text-white tracking-tighter text-xl w-3/5'>
+    <div className='w-full flex flex-col items-center justify-center'>
+    <div className=''>
+    <div className='flex flex-row'>
+      <div className='flex flex-col p-10 bg-content text-white tracking-tighter text-xl w-3/5 max-md:text-lg max-md:w-full'>
       <div className='md:py-20 md:pb-20 md:pl-24 '>
         <div className='flex gap-4 pb-2 tracking-[.3em]'> 
           <svg xmlns="http://www.w3.org/2000/svg" width="60" height="43" viewBox="0 0 60 43" fill="none">
@@ -45,14 +46,16 @@ const ServicesATV = () => {
 
         <div className='flex flex-col gap-5 mr-0'>
           <div className='flex'>
-            <h1 className='text-7xl font-extrabold'>APOYO <br/> ACADÉMICO</h1>
+            <h1 className='text-7xl font-extrabold max-md:text-2xl max-lg:text-3xl'>APOYO <br/> ACADÉMICO</h1>
           </div>
           <p>Ofrecemos servicios especializados que tienen como objetivo implementar:</p>
           <p className='font-bold'>Tutorías / Nivélate con Antivirus / Grupos de Estudio</p>
         </div>
       </div>
     </div>
-    <div className='md:w-1/2 '>
+
+
+    <div className='md:w-1/2 max-md:hidden'>
         <div className='flex gap-16 items-center justify-center md:max-w-full md:h-auto md:flex-col md:gap-6' style={{ width: '100%', height: '100%', transform: `translateX(0%)` }}>
           {imgs.map((logo, index) => (
             <div key={index} className={`w-full h-full ${index === startIndex ? '' : 'hidden'}`}>
@@ -68,21 +71,28 @@ const ServicesATV = () => {
         </div>
       </div>
 
-      
+
     </div>
-    <div className="relative w-full flex justify-end max-w-screen-2xl">
-      <div className='flex'>
+
+    <div className='flex items-center justify-center ml-[40rem] max-md:flex-col max-md:ml-[0rem] max-md:items-start max-md:justify-start max-lg:ml-[2rem]
+    max-xl: '>
+
+      <div className=''>
         <div className='contNext flex bg-content h-40 flex-col justify-center text-center'>
-          <div className='mx-16 w-full'>
+          <div className='mx-10 w-full max-xl:mx-2'>
+
             <div className='text-xl'>
               <p className='text-white text-left leading-4 font-roboto '>Sabemos cómo ayudarte</p>
             </div>
+
           <p className='text-white text-left font-bold '>Conoce nuestros</p>
           <p className='text-white text-left leading-4 font-bold'>servicios</p>
           </div>
         </div>
       </div>
-      <div className="btn_Serv flex mr-3">
+
+
+      <div className="btn_Serv flex justify-end">
           <div className='flex justify-between'>
           <button className='btnLeft px-14' onClick={handleClickPrev}>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
@@ -96,6 +106,7 @@ const ServicesATV = () => {
           </button>
           </div>
       </div>
+    </div>
     </div>
     </div>
   );

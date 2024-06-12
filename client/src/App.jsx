@@ -9,6 +9,8 @@ import QHFA from './views/QHFA';
 import DataAnalytics from './views/DataAnalytics';
 import Foundation from './views/Foundation';
 import ContacUs from './views/ContacUs';
+import Communications_ATV from './views/Communications_ATV'
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
           <Route path="/DonationPay" element={<DonationPay />} />
           <Route path="/intervencion/fortalecimiento-academico" element={<QHFA />} />
           <Route path='/dataAnalyctis' element={<DataAnalytics />} />
+          <Route path='/Comunicaciones' element={<Communications_ATV />} />
           <Route path='/fundacion' element={<Foundation />}/>
           <Route path='/ContactUs' element={<ContacUs />} />
         </Routes>

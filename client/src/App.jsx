@@ -10,6 +10,7 @@ import DataAnalytics from './views/DataAnalytics';
 import Foundation from './views/Foundation';
 import ContacUs from './views/ContacUs';
 import Communications_ATV from './views/Communications_ATV'
+import ApoyoAcademico from './Services/ApoyoAcademico';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='/Comunicaciones' element={<Communications_ATV />} />
           <Route path='/fundacion' element={<Foundation />}/>
           <Route path='/ContactUs' element={<ContacUs />} />
+          <Route path='/ApoyoAcademico' element={<ApoyoAcademico />} />
         </Routes>
       </div>
     </BrowserRouter>

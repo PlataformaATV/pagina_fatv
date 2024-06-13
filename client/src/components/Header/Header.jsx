@@ -2,41 +2,65 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import '../Header/Header.css'
+
 function Header() {
   const [isHidden, setIsHidden] = useState(false);
   const [nav, setNav] = useState(false);
   const [queHacemos, setQueHacemos] = useState(false);
   const [servicios, setServicios] = useState(false);
   const [idioma, setIdioma] = useState(false);
+  const [students, setStudents] = useState(false)
   const [popupPosition, setPopupPosition] = useState('9rem');
+  const [popupPositionStudents, setPopupPositionStudents] = useState('17rem');
 
   const handleNav = () => {
     setNav(!nav);
     closePopups();
   };
 
+
+  const handlePopupStudents = () => {
+    setStudents(!students)
+    setIdioma(false)
+    setQueHacemos(false)
+  }
+
+  const handleMouseEnter = () => {
+    setStudents(true);
+   
+  };
+
+  const handleMouseLeave = () => {
+    setStudents(false);
+  };
+  
+
   const handleClikPopupQH = () => {
     setQueHacemos(!queHacemos);
     setServicios(false);
     setIdioma(false);
+    setStudents(false)
   };
 
   const handleClikPopupServices = () => {
     setServicios(!servicios);
     setQueHacemos(false);
     setIdioma(false);
+    setStudents(false)
   };
 
   const handleClikPopupIdioma = () => {
     setIdioma(!idioma);
     setQueHacemos(false);
     setServicios(false);
+    setStudents(false)
   };
 
   const closePopups = () => {
     setQueHacemos(false);
     setServicios(false);
     setIdioma(false);
+    setStudents(false)
   };
 
   const navItems = [
@@ -44,7 +68,7 @@ function Header() {
     { id: 2, text: 'FUNDACION', link: '/Fundacion' },
     { id: 3, text: 'QUE HACEMOS'},
     { id: 4, text: 'SERVICIOS',},
-    { id: 5, text: 'NOTICIAS', link: '/Noticias' },
+    { id: 5, text: 'PROYECTOS', link: '/Proyectos' },
     { id: 6, text: 'CONTACTANOS', link: '/ContactUs' }
   ];
 
@@ -58,9 +82,11 @@ function Header() {
       if (isScrollingUp || currentScroll <= 0) {
         setIsHidden(false);
         setPopupPosition('9rem');
+        setPopupPositionStudents('17rem')
       } else {
         setIsHidden(true);
         setPopupPosition('0');
+        setPopupPositionStudents('7rem')
       }
       lastScrollTop = currentScroll;
     };
@@ -80,9 +106,9 @@ function Header() {
 
   return (
     <div>
-      <header className={`hidden z-50 flex lg:flex justify-between items-center py-3 px-16 max-md:py-2 bg-white fixed w-full transition-all duration-300 ${isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
+      <header onMouseLeave={handleMouseLeave} className={`hidden z-50 flex lg:flex justify-between items-center py-3 px-16 max-md:py-2 bg-white fixed w-full transition-all duration-300 ${isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
         <div className='Links-left flex gap-1 items-center'>
-          <Link to="/" className='text-title font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain' style={{ letterSpacing: '-1px' }}>Inicio</Link>
+          <Link to="/" onClick={handleNav} className='text-title font-extrabold uppercase transition duration-400 ease-in-out max-xl:text-sm object-contain' style={{ letterSpacing: '-1px' }}>Inicio</Link>
           <span className='text-blue-links mx-1'>|</span>
           <Link to="/Fundacion" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>FUNDACIÓN</Link>
           <span className='text-title mx-1'>|</span>
@@ -96,7 +122,7 @@ function Header() {
         </div>
 
         <div className='Links-right flex gap-3 items-center'>
-          <Link to="/Noticias" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>NOTICIAS</Link>
+          <Link to="/Noticias" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>Proyectos</Link>
           <span className='text-title mx-1'>|</span>
           <Link to="/ContactUs" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>CONTÁCTENOS</Link>
           <span className='text-title mx-1'>|</span>
@@ -143,10 +169,13 @@ function Header() {
             <Link to={item.link} onClick={handleNav}>{item.text}</Link>
           </li>
         ))}
+         <button className='flex items-center justify-center py-3 px-4 bg-btn-back rounded-3xl text-white font-bold hover:bg-orange-500 transition duration-700 transform hover:scale-105 max-xl:py-2 px-3'>
+            <div className="flex items-center">
+              Apóyanos
+              <box-icon name='gift' color='#eae9e9'></box-icon>
+            </div>
+          </button>
 
-        <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out cursor-pointer' onClick={handleClikPopupQH}>
-          QUÉ HACEMOS
-        </li>
         {queHacemos && (
           <ul className='pl-4'>
             <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
@@ -161,9 +190,7 @@ function Header() {
           </ul>
         )}
 
-        <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out cursor-pointer' onClick={handleClikPopupServices}>
-          SERVICIOS
-        </li>
+       
         {servicios && (
           <ul className='pl-4'>
             <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
@@ -175,9 +202,6 @@ function Header() {
           </ul>
         )}
 
-        <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out cursor-pointer' onClick={handleClikPopupIdioma}>
-          IDIOMA
-        </li>
         {idioma && (
           <ul className='pl-4'>
             <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
@@ -203,7 +227,8 @@ function Header() {
       {servicios && (
         <div className="fixed left-0 items-center right-0 bg-blue-links text-white  z-50 popup-animation text-3xl font-anton" style={{ top: popupPosition }}>
           <ul className='flex items-center justify-center gap-20 p-10'>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>A LOS ESTUDIANTES</li>
+            <li  onMouseEnter={handleMouseEnter}
+               className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>A LOS ESTUDIANTES</li>
             <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS</li>
           </ul>
         </div>
@@ -215,6 +240,19 @@ function Header() {
             <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>INGLÉS</li>
             <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>ESPAÑOL</li>
           </ul>
+        </div>
+      )}
+
+      {students && (
+        <div className="fixed left-0 items-center right-0  bg-btn-back text-white z-50 popup-animation text-lg"
+         style={{ top: popupPositionStudents }}>
+          <ul className='flex items-center justify-center gap-12 p-10 '>
+            <Link to="/ApoyoAcademico" className=' hover:opacity-55 hover:text-blue-links cursor-pointer'><span className='font-bold'>01.</span> Apoyo Académico</Link>
+            <Link to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd" className=' hover:opacity-55 hover:text-blue-links cursor-pointer'><span className='font-bold'>02. </span> Banco de Oportunidades Estudiantiles</Link>
+            <Link className=' hover:opacity-55 hover:text-blue-links cursor-pointer'><span className='font-bold'>03. </span> Acompañamiento y orientación</Link>
+            <Link className=' hover:opacity-55 hover:text-blue-links cursor-pointer'><span className='font-bold'>04. </span> Repositorio fundación antivirus</Link>
+          </ul>
+
         </div>
       )}
     </div>

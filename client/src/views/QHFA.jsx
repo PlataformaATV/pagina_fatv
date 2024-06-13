@@ -5,7 +5,6 @@ import imgBanner from '../../public/img_viewQHav/slider-servicios.webp'
 import emocinal1 from '../../public/img_viewQHav/sociopedagogical-image-1.jpg'
 import emocinal2 from '../../public/img_viewQHav/sociopedagogical-image-2.jpg'
 import emocional3 from '../../public/img_viewQHav/sociopedagogical-image-3.jpg'
-import Player from 'react-player';
 
 
 function QHFA() {

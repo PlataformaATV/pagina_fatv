@@ -191,17 +191,7 @@ function Header() {
         )}
 
        
-        {servicios && (
-          <ul className='pl-4'>
-            <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
-              CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS
-            </li>
-            <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
-              COMUNICACIONES
-            </li>
-          </ul>
-        )}
-
+        
         {idioma && (
           <ul className='pl-4'>
             <li className='p-2 text-blue-links font-extrabold uppercase leading-none transition duration-400 ease-in-out'>
@@ -229,7 +219,7 @@ function Header() {
           <ul className='flex items-center justify-center gap-20 p-10'>
             <li  onMouseEnter={handleMouseEnter}
                className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>A LOS ESTUDIANTES</li>
-            <li className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS</li>
+            <Link to="/Consultorias" className='border-b-4 hover:opacity-55 hover:text-purple-300 cursor-pointer'>CONSULTORÍAS E IMPLEMENTACIÓN DE PROYECTOS</Link>
           </ul>
         </div>
       )}

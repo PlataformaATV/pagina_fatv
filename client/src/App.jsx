@@ -13,6 +13,7 @@ import Communications_ATV from './views/Communications_ATV'
 import ApoyoAcademico from './Services/ApoyoAcademico';
 import AcompañamientoOrientacion from './Services/AcompañamientoOrientacion';
 import Repositorio from './Services/Repositorio';
+import Consultorias from './Services/Consultorias';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path='/ApoyoAcademico' element={<ApoyoAcademico />} />
           <Route path='/AcompañamientoOrientacion' element={<AcompañamientoOrientacion />} />
           <Route path='/Repositorio' element={<Repositorio />} />
+          <Route path='/Consultorias' element={<Consultorias />} />
 
         </Routes>
       </div>

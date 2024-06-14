@@ -10,12 +10,35 @@ function OurTeam() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className="OurTeam-block">
       <div className="OurTeam-block-title">
-        <h3>sobre nuestro equipo</h3>
+        <h3>sobre nuestro <br/>equipo</h3>
       </div>
       <div className="OurTeam">
         <div className="cards">
@@ -25,8 +48,8 @@ function OurTeam() {
                 <div className="image">
                   <img src={card.image} alt={card.name} />
                 </div>
-                <div className="content">
-                  <div className="content-info">
+                <div className="OurTeam-content">
+                  <div className="OurTeam-content-info">
                     <h5 className="content-info-name">{card.name}</h5>
                     <p className="content-info-role">{card.role}</p>
                   </div>

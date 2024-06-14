@@ -78,7 +78,7 @@ const ServicesATV = () => {
     max-xl: '>
 
       <div className=''>
-        <div className='contNext flex bg-content h-40 flex-col justify-center text-center lg:mx-10 md:mx-1'>
+        <div className='contNext flex bg-content h-40 flex-col justify-center text-center lg:mx-10 '>
           <div className='mx-10 w-full max-xl:mx-2'>
 
             <div className='text-xl lg:text-base md:text-base'>
@@ -94,7 +94,7 @@ const ServicesATV = () => {
 
       <div className="btn_Serv flex justify-end">
           <div className='flex justify-between'>
-          <button className='btnLeft lg:px-14 md:px-6' onClick={handleClickPrev}>
+          <button className='btnLeft lg:px-14  md:px-6' onClick={handleClickPrev}>
           <box-icon name='left-arrow-alt' color='#040404' ></box-icon>
           </button>
           <button className='btnRigth lg:px-14 mr-8 md:px-6 ' onClick={handleClickNext}>

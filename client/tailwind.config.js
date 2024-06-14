@@ -12,14 +12,21 @@ export default {
         'title' : '#33526d',
         'ourteam' : '#ffba08',
         'content' : '#232e55',
+        'banner' : '#faa307' ,
+        'h1-banner': '#f8b732',
+        'cc': '#33526d;'
         
       },
       fontFamily: {
         'oswald': ['Oswald'],
-        'roboto': ['Roboto']
+        'roboto': ['Roboto'],
+        'anton' : ['Anton'] ,
       },
-      margin: {
-        '128px': '128px'
+      letterSpacing: {
+        'nm': '0.3em'
+      },
+      width: {
+        '450': '28.125rem'
       }
     },
   },

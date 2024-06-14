@@ -94,7 +94,7 @@ const ServicesATV = () => {
 
       <div className="btn_Serv flex justify-end">
           <div className='flex justify-between'>
-          <button className='btnLeft lg:px-14 ml-8 md:px-6' onClick={handleClickPrev}>
+          <button className='btnLeft lg:px-14 md:px-6' onClick={handleClickPrev}>
           <box-icon name='left-arrow-alt' color='#040404' ></box-icon>
           </button>
           <button className='btnRigth lg:px-14 mr-8 md:px-6 ' onClick={handleClickNext}>

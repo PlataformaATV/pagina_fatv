@@ -65,30 +65,30 @@ function ApoyoAcademico() {
         <div className='mx-8 my-12 sm:mx-8 sm:my-16 md:mx-12 md:my-20 lg:mx-28 lg:my-20 max-w-screen-xl'>
           <div className="flex flex-col md:flex-row">
             <div className='w-full md:w-1/2 pr-7'>
-              <h1 className="tracking-nm text-blue-links">PRESTAMOS LOS SIGUIENTES SERVICIOS:</h1>
-              <h1 className='font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2'>A LOS ESTUDIANTES</h1>
-              <h1 className='font-anton text-blue-links text-xl'>APOYO ACADÉMICO:</h1>
+              <h1 className="tracking-nm text-cc">PRESTAMOS LOS SIGUIENTES SERVICIOS:</h1>
+              <h1 className='font-anton text-cc text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 mt-2'>A LOS ESTUDIANTES</h1>
+              <h1 className='font-anton text-cc text-2xl mb-10'>APOYO ACADÉMICO:</h1>
               
-              <div className='flex flex-col gap-11'>
+              <div className='flex flex-col gap-8'>
               <div>
-              <h2 className='font-anton text-cc text-lg'>
+              <h2 className='font-anton text-cc text-xl'>
               Tutorías / Mentorías</h2>
-              <p className='text-blue-links'>
+              <p className='text-blue-links text-lg'>
               Las tutorías académicas son un espacio de repaso personalizado de aquellas materias que representan mayor dificultad.
               </p>
               </div>
 
               <div>
-              <h2 className='font-anton text-cc text-lg'>Nivélate con Antivirus</h2>
-              <p className='text-blue-links'>
+              <h2 className='font-anton text-cc text-xl'>Nivélate con Antivirus</h2>
+              <p className='text-blue-links text-lg'>
               Es una estrategia que busca acompañar abiertamente a todos los estudiantes que se encuentran en estado de vulnerabilidad académica y buscan aprobar los cursos.
               </p>
               </div>
 
 
               <div>
-               <h2 className='font-anton text-cc text-lg'>Grupos de Estudio</h2>
-              <p className='text-blue-links'>
+               <h2 className='font-anton text-cc text-xl'>Grupos de Estudio</h2>
+              <p className='text-blue-links text-lg'>
               Es un espacio de encuentro para grupos pequeños de estudiantes enfocado en el repaso de materias específicas
               </p>
               </div>
@@ -96,16 +96,31 @@ function ApoyoAcademico() {
 
 
             </div>
-            <div className='w-full md:w-1/2'>
+            <div className='w-full md:w-1/2 relative'>
               <img src={emocional3} alt="emocional 1" className="w-full h-auto object-cover" />
+
+              <div className='absolute bottom-1 left-0-0 bg-blue-links px-16 py-12'>
+                <b className='text-xl text-white '>Evento becados Itaguí</b>
+                <p className='text-white text-xl'>Una alianza creada para a compañarte</p>
+              </div>
+
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row relative">
          
-  <div className="w-full md:w-1/2 ">
+  <div className="w-full md:w-1/2 relative ">
 
   <img className="w-full h-auto object-cover" src={imgServices2} alt="emocional 2" />
+
+  <div className='absolute bottom-0 left-0-0 bg-blue-links px-16 py-12'>
+                <b className='text-xl text-white '>Colegios Itaguí</b>
+                <p className='text-white text-xl'>Charlas pedagógicas sobre el acompañamiento</p>
+              </div>
+
+  <div>
+    
+  </div>
   </div>
 
           </div>

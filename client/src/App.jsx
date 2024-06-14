@@ -11,6 +11,8 @@ import Foundation from './views/Foundation';
 import ContacUs from './views/ContacUs';
 import Communications_ATV from './views/Communications_ATV'
 import ApoyoAcademico from './Services/ApoyoAcademico';
+import AcompañamientoOrientacion from './Services/AcompañamientoOrientacion';
+import Repositorio from './Services/Repositorio';
 
 
 function App() {
@@ -27,6 +29,9 @@ function App() {
           <Route path='/fundacion' element={<Foundation />}/>
           <Route path='/ContactUs' element={<ContacUs />} />
           <Route path='/ApoyoAcademico' element={<ApoyoAcademico />} />
+          <Route path='/AcompañamientoOrientacion' element={<AcompañamientoOrientacion />} />
+          <Route path='/Repositorio' element={<Repositorio />} />
+
         </Routes>
       </div>
     </BrowserRouter>

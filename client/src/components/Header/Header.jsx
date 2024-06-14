@@ -249,8 +249,8 @@ function Header() {
           <ul className='flex items-center justify-center gap-12 p-10 '>
             <Link to="/ApoyoAcademico" className=' hover:opacity-55 hover:text-blue-links cursor-pointer'><span className='font-bold'>01.</span> Apoyo Académico</Link>
             <Link to="http://ww25.boe.antivirusparaladesercion.com/?subid1=20240613-1351-4868-a8d0-442c08b62acd" className=' hover:opacity-55 hover:text-blue-links cursor-pointer'><span className='font-bold'>02. </span> Banco de Oportunidades Estudiantiles</Link>
-            <Link className=' hover:opacity-55 hover:text-blue-links cursor-pointer'><span className='font-bold'>03. </span> Acompañamiento y orientación</Link>
-            <Link className=' hover:opacity-55 hover:text-blue-links cursor-pointer'><span className='font-bold'>04. </span> Repositorio fundación antivirus</Link>
+            <Link to="/AcompañamientoOrientacion" className=' hover:opacity-55 hover:text-blue-links cursor-pointer'><span className='font-bold'>03. </span> Acompañamiento y orientación</Link>
+            <Link to="/Repositorio" className=' hover:opacity-55 hover:text-blue-links cursor-pointer'><span className='font-bold'>04. </span> Repositorio fundación antivirus</Link>
           </ul>
 
         </div>

@@ -79,7 +79,7 @@ const ServicesATV = () => {
 
       <div className=''>
         <div className='contNext flex bg-content h-40 flex-col justify-center text-center lg:mx-10 md:mx-1'>
-          <div className='mx-10 w-full max-xl:mx-2'>
+          <div className='mx-20 w-full max-xl:mx-2'>
 
             <div className='text-xl lg:text-base md:text-base'>
               <p className='text-white text-left leading-4 font-roboto '>Sabemos cómo ayudarte</p>

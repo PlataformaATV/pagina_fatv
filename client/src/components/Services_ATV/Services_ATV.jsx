@@ -29,7 +29,7 @@ const ServicesATV = () => {
 
 
   return (
-    <div className='w-full flex flex-col items-center justify-center'>
+    <div className='w-full flex flex-col items-center justify-center contServ'>
     <div className=''>
     <div className='flex flex-row'>
       <div className='flex flex-col p-10 bg-content text-white tracking-tighter text-xl w-3/5 max-md:text-lg max-md:w-full'>
@@ -55,7 +55,7 @@ const ServicesATV = () => {
     </div>
 
 
-    <div className='md:w-1/2 max-md:hidden'>
+    <div className='flex md:w-1/2 max-md:hidden'>
         <div className='flex gap-16 items-center justify-center md:max-w-full md:h-auto md:flex-col md:gap-6' style={{ width: '100%', height: '100%', }}>
           {imgs.map((logo, index) => (
             <div key={index} className={`w-full h-full ${index === startIndex ? '' : 'hidden'}`}>
@@ -75,11 +75,11 @@ const ServicesATV = () => {
     </div>
 
     <div className='flex  items-center justify-end ml-[40rem] max-md:flex-col max-md:ml-[0rem] max-md:items-start max-md:justify-start max-lg:ml-[2rem]
-    max-xl: '>
+     contArrows'>
 
       <div className=''>
         <div className='contNext flex bg-content h-40 flex-col justify-center text-center lg:mx-10 '>
-          <div className='mx-10 w-full max-xl:mx-2'>
+          <div className='px-20  max-xl:mx-4 max-xl:px-8 max-lg:px-4'>
 
             <div className='text-xl lg:text-base md:text-base'>
               <p className='text-white text-left leading-4 font-roboto '>Sabemos cómo ayudarte</p>
@@ -94,10 +94,10 @@ const ServicesATV = () => {
 
       <div className="btn_Serv flex justify-end">
           <div className='flex justify-between'>
-          <button className='btnLeft lg:px-14  md:px-6' onClick={handleClickPrev}>
+          <button className='btnLeft lg:px-12 max-xl:ml-3   md:px-6' onClick={handleClickPrev}>
           <box-icon name='left-arrow-alt' color='#040404' ></box-icon>
           </button>
-          <button className='btnRigth lg:px-14 mr-8 md:px-6 ' onClick={handleClickNext}>
+          <button className='btnRigth lg:px-12 mr-8  max-xl:mr-4  md:px-6 ' onClick={handleClickNext}>
           <box-icon name='right-arrow-alt' color='#040404' ></box-icon>
           </button>
           </div>

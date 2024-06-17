@@ -51,7 +51,7 @@ function Footer() {
           </div>
         </div>
         <div className='footer-copy'>
-            <p>Antivirus para la Desercion © 2024 all rights reserved</p>
+            <p>Antivirus para la Deserción © 2024 all rights reserved</p>
             <p>Política de protección de datos</p>
         </div>
         <div className='footer-redirecion'> {/* Movemos el div del botón de redirección aquí */}

@@ -14,6 +14,7 @@ import ApoyoAcademico from './Services/ApoyoAcademico';
 import AcompañamientoOrientacion from './Services/AcompañamientoOrientacion';
 import Repositorio from './Services/Repositorio';
 import Consultorias from './Services/Consultorias';
+import Projects_ATV from './views/Projects_ATV';
 
 
 function App() {
@@ -28,12 +29,13 @@ function App() {
           <Route path='/dataAnalyctis' element={<DataAnalytics />} />
           <Route path='/Comunicaciones' element={<Communications_ATV />} />
           <Route path='/fundacion' element={<Foundation />}/>
+          <Route path='/Proyectos' element={<Projects_ATV />} />
           <Route path='/ContactUs' element={<ContacUs />} />
           <Route path='/ApoyoAcademico' element={<ApoyoAcademico />} />
           <Route path='/AcompañamientoOrientacion' element={<AcompañamientoOrientacion />} />
           <Route path='/Repositorio' element={<Repositorio />} />
           <Route path='/Consultorias' element={<Consultorias />} />
-
+          
         </Routes>
       </div>
     </BrowserRouter>

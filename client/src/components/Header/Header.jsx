@@ -122,7 +122,7 @@ function Header() {
         </div>
 
         <div className='Links-right flex gap-3 items-center'>
-          <Link to="/Noticias" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>Proyectos</Link>
+          <Link to="/Proyectos" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>Proyectos</Link>
           <span className='text-title mx-1'>|</span>
           <Link to="/ContactUs" className='text-title font-extrabold uppercase leading-none transition duration-400 ease-in-out max-xl:text-sm' style={{ letterSpacing: '-1px' }}>CONTÁCTENOS</Link>
           <span className='text-title mx-1'>|</span>

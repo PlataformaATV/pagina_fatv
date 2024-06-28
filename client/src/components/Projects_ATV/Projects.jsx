@@ -94,15 +94,15 @@ function Projects() {
         <div className='flex flex-col items-center justify-center'>
 
         <div className='flex flex-col justify-center text-center'>
-              <h1 className='text-3xl'>Nuestros Proyectos</h1>
+              <h1 className='text-3xl font-anton text-banner mt-10'>Nuestros Proyectos</h1>
           </div>
 
 
 
           <div className='projects-content'>
           {proyectsContent.map((project, index) => (
-            <div key={index} >
-              <h1 className='text-2xl'>{project.title}</h1>
+            <div key={index} className='transform hover:scale-110 cursor-pointer' >
+              <h1 className='text-2xl font-anton text-blue-links'>{project.title}</h1>
               <img className='"object-cover h-48 w-96 rounded-3xl' src={project.img} alt={project.name} />
             </div>
           ))}

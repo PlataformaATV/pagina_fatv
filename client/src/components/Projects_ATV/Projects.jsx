@@ -44,12 +44,14 @@ function Projects() {
     {
       title: "Universidades",
       img: "https://estaticos.elcolombiano.com/binrepository/580x365/0c0/0d0/none/11101/CFOY/udea_38598473_20210923105540.jpg",
-      name: "universidades"
+      name: "universidades",
+      href: "/Universidades"
     },
     {
       title: "BootCamps",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4sSUWjF6jkDN3m9Et_JQTunBm1dYY0NoKeA&s",
-      name: "bootcamps"
+      name: "bootcamps",
+      href: "/BootCamps"
     },
     {
       title: "Colegios",
@@ -60,6 +62,15 @@ function Projects() {
       title: "Becarios",
       img: "https://empresas.infoempleo.com/hrtrends/media/2023/02/Empresa-que-decide-contratar-a-becarios.jpg",
       name: "Becarios"
+    }
+  ])
+
+
+  const[university, setUniversity] = useState([
+    {
+      name: "UDEA",
+      img: "logo",
+      href: ""
     }
   ])
     return (
@@ -101,10 +112,10 @@ function Projects() {
 
           <div className='projects-content'>
           {proyectsContent.map((project, index) => (
-            <div key={index} className='transform hover:scale-110 cursor-pointer' >
+            <a href={project.href} key={index} className='transform hover:scale-110 cursor-pointer' >
               <h1 className='text-2xl font-anton text-blue-links'>{project.title}</h1>
               <img className='"object-cover h-48 w-96 rounded-3xl' src={project.img} alt={project.name} />
-            </div>
+            </a>
           ))}
           </div>
 

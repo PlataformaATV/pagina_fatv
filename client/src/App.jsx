@@ -15,6 +15,7 @@ import AcompañamientoOrientacion from './Services/AcompañamientoOrientacion';
 import Repositorio from './Services/Repositorio';
 import Consultorias from './Services/Consultorias';
 import Projects_ATV from './views/Projects_ATV';
+import Universidades from './projects/Universidades/Universidades';
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
           <Route path='/AcompañamientoOrientacion' element={<AcompañamientoOrientacion />} />
           <Route path='/Repositorio' element={<Repositorio />} />
           <Route path='/Consultorias' element={<Consultorias />} />
-          
+          <Route path='/Universidades' element={<Universidades />} />
         </Routes>
       </div>
     </BrowserRouter>

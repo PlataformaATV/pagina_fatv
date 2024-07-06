@@ -16,7 +16,9 @@ import Repositorio from './Services/Repositorio';
 import Consultorias from './Services/Consultorias';
 import Projects_ATV from './views/Projects_ATV';
 import Universidades from './projects/Universidades/Universidades';
-import Bootcamps from './projects/Bootcamps/Bootcamps'  
+import Bootcamps from './projects/Bootcamps/Bootcamps'
+import Colegio from './projects/Colegios/Colegio';
+import Becarios from './projects/Becarios/Becarios';
 
 function App() {
   return (
@@ -38,7 +40,8 @@ function App() {
           <Route path='/Consultorias' element={<Consultorias />} />
           <Route path='/Universidades' element={<Universidades />} />
           <Route path='/Bootcamps' element={<Bootcamps />} />
-        
+          <Route path='/Becarios' element={<Becarios />} />
+          <Route path='/Colegios' element={<Colegio />} />
         </Routes>
       </div>
     </BrowserRouter>

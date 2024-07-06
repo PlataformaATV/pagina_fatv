@@ -5,7 +5,7 @@ import imgBanner from '../../public/services_imgs/banner-services.jpg'
 import foto3 from '../../public/services_imgs/foto4.jpg'
 import foto4 from '../../public/services_imgs/foto3.jpg'
 
-function Repositorio() {
+function Repositorio() { 
   return (
     <div>
          <Header />

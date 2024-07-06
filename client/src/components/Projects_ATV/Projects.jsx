@@ -56,12 +56,14 @@ function Projects() {
     {
       title: "Colegios",
       img: "https://bogota.gov.co/sites/default/files/styles/1050px/public/2023-05/laureldeceraokpg.jpeg",
-      name: "colegios"
+      name: "colegios",
+      href: "/Colegios"
     },
     {
       title: "Becarios",
       img: "https://empresas.infoempleo.com/hrtrends/media/2023/02/Empresa-que-decide-contratar-a-becarios.jpg",
-      name: "Becarios"
+      name: "Becarios",
+      href: "/Becarios"
     }
   ])
 

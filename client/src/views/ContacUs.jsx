@@ -21,7 +21,7 @@ function ContacUs() {
   const validate = () => {
     let tempErrors = {};
     const emailRegex = /\S+@\S+\.\S+/;
-    const phoneRegex = /^\d{10}$/; // 10 dígitos numéricos
+    const phoneRegex = /^\d{10}$/; 
     const nameRegex = /^[a-zA-Z\s]+$/;
 
     tempErrors.fullName = nameRegex.test(formData.fullName)
@@ -55,10 +55,10 @@ function ContacUs() {
     if (validate()) {
       emailjs
         .send(
-          "YOUR_SERVICE_ID", // Reemplaza con tu service ID de EmailJS
-          "YOUR_TEMPLATE_ID", // Reemplaza con tu template ID de EmailJS
+          "YOUR_SERVICE_ID", 
+          "YOUR_TEMPLATE_ID", 
           formData,
-          "YOUR_USER_ID" // Reemplaza con tu user ID de EmailJS
+          "YOUR_USER_ID" 
         )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);

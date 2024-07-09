@@ -9,6 +9,16 @@ import QHFA from './views/QHFA';
 import DataAnalytics from './views/DataAnalytics';
 import Foundation from './views/Foundation';
 import ContacUs from './views/ContacUs';
+import Communications_ATV from './views/Communications_ATV'
+import ApoyoAcademico from './Services/ApoyoAcademico';
+import AcompañamientoOrientacion from './Services/AcompañamientoOrientacion';
+import Repositorio from './Services/Repositorio';
+import Consultorias from './Services/Consultorias';
+import Projects_ATV from './views/Projects_ATV';
+import Universidades from './projects/Universidades/Universidades';
+import Bootcamps from './projects/Bootcamps/Bootcamps'
+import Colegio from './projects/Colegios/Colegio';
+import Becarios from './projects/Becarios/Becarios';
 
 function App() {
   return (
@@ -20,8 +30,18 @@ function App() {
           <Route path="/DonationPay" element={<DonationPay />} />
           <Route path="/intervencion/fortalecimiento-academico" element={<QHFA />} />
           <Route path='/dataAnalyctis' element={<DataAnalytics />} />
+          <Route path='/Comunicaciones' element={<Communications_ATV />} />
           <Route path='/fundacion' element={<Foundation />}/>
+          <Route path='/Proyectos' element={<Projects_ATV />} />
           <Route path='/ContactUs' element={<ContacUs />} />
+          <Route path='/ApoyoAcademico' element={<ApoyoAcademico />} />
+          <Route path='/AcompañamientoOrientacion' element={<AcompañamientoOrientacion />} />
+          <Route path='/Repositorio' element={<Repositorio />} />
+          <Route path='/Consultorias' element={<Consultorias />} />
+          <Route path='/Universidades' element={<Universidades />} />
+          <Route path='/Bootcamps' element={<Bootcamps />} />
+          <Route path='/Becarios' element={<Becarios />} />
+          <Route path='/Colegios' element={<Colegio />} />
         </Routes>
       </div>
     </BrowserRouter>

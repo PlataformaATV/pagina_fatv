@@ -25,7 +25,8 @@ function Footer() {
               <p>.org</p>
               </div>
               <br />
-              <p>WhatsApp: +57 3226367781</p>
+              <p>WhatsApp: +57</p>
+              <p>3173831481</p>
             </div>
             <div className='footer-redes'>
               <h2>Nuestras redes sociales</h2>

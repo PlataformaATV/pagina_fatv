@@ -1,7 +1,10 @@
-.contNext{
-    width: 26.3vw;
-}
+@media (min-width: 1100px) {
+    .contServ {
+        display: flex;
+        width: 100%;
+    }
 
-.contNext p{
-    font-size: 1.1764705882em;
+    .contProyect {
+        padding-left: 20%;
+    }
 }

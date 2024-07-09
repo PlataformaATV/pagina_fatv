@@ -5,7 +5,10 @@ import imgBanner from '../../public/img_viewQHav/slider-servicios.webp'
 import emocinal1 from '../../public/img_viewQHav/sociopedagogical-image-1.jpg'
 import emocinal2 from '../../public/img_viewQHav/sociopedagogical-image-2.jpg'
 import emocional3 from '../../public/img_viewQHav/sociopedagogical-image-3.jpg'
+<<<<<<< HEAD
 //import Player from 'react-player';
+=======
+>>>>>>> develop
 
 
 function QHFA() {
@@ -101,7 +104,7 @@ function QHFA() {
           </div>
 
           <div className='flex flex-col md:flex-row relative '>
-            <div className='w-full md:w-1/2'>
+            <div className='w-full md:w-1/2 pr-7'>
               <h1 className='font-anton text-blue-links text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-8'>Acompañamiento psicoemocional y sociopedagógico:</h1>
               <p>Esta área está encargada de:</p>
               <ul>

@@ -42,8 +42,8 @@ function ContacUs() {
     e.preventDefault();
     if (validate()) {
       emailjs.send(
-        'service_2bvz6wb', // Reemplaza con tu service ID de EmailJS
-        'template_oacf6ns', // Reemplaza con tu template ID de EmailJS
+        'service_p787c7d', // Reemplaza con tu service ID de EmailJS
+        'template_66stj57', // Reemplaza con tu template ID de EmailJS
         formData,
         'antivirusparaladesercion@gmail.com' // Reemplaza con tu user ID de EmailJS
       )

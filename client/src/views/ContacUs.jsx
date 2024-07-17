@@ -6,7 +6,7 @@ import imgContact from "../../public/contactUs/contact-image.jpg";
 import { FaLocationDot } from "react-icons/fa6";
 import emailjs from 'emailjs-com';
 
-function ContacUs() {
+function ContactUs() {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -17,15 +17,16 @@ function ContacUs() {
   });
 
   const [errors, setErrors] = useState({});
+  const [isSending, setIsSending] = useState(false);
 
   const validate = () => {
     let tempErrors = {};
-    tempErrors.fullName = formData.fullName ? '' : 'Nombre completo es requerido.';
-    tempErrors.email = /\S+@\S+\.\S+/.test(formData.email) ? '' : 'Correo electrónico es inválido.';
-    tempErrors.phone = formData.phone ? '' : 'Teléfono es requerido.';
-    tempErrors.subject = formData.subject ? '' : 'Asunto es requerido.';
-    tempErrors.message = formData.message ? '' : 'Mensaje es requerido.';
-    tempErrors.terms = formData.terms ? '' : 'Debe aceptar los términos y condiciones.';
+    tempErrors.fullName = formData.fullName ? '' : ' Nombre completo es requerido.';
+    tempErrors.email = /\S+@\S+\.\S+/.test(formData.email) ? '' : ' Correo electrónico es inválido.';
+    tempErrors.phone = formData.phone ? '' : ' Teléfono es requerido.';
+    tempErrors.subject = formData.subject ? '' : ' Asunto es requerido.';
+    tempErrors.message = formData.message ? '' : ' Mensaje es requerido.';
+    tempErrors.terms = formData.terms ? '' : ' Debe aceptar los términos y condiciones.';
     setErrors(tempErrors);
     return Object.values(tempErrors).every((x) => x === '');
   };
@@ -41,17 +42,37 @@ function ContacUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
+      setIsSending(true); // Cambiar el estado a enviando
+      const emailParams = {
+        from_name: formData.fullName,
+        email_id: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message,
+        terms: formData.terms ? "Acepto" : "No acepto"
+      };
+  
       emailjs.send(
-        'service_p787c7d', // Reemplaza con tu service ID de EmailJS
-        'template_66stj57', // Reemplaza con tu template ID de EmailJS
-        formData,
-        'antivirusparaladesercion@gmail.com' // Reemplaza con tu user ID de EmailJS
+        'service_2bvz6wb', //  service ID de EmailJS
+        'template_oacf6ns', //  template ID de EmailJS
+        emailParams, 
+        '06in3EAhhtx15iDoZ' //  public key de EmailJS
       )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+          terms: false,
+        }); // Limpiar el formulario
+        setIsSending(false); // Restablecer el estado de envío
       })
       .catch((err) => {
         console.error('FAILED...', err);
+        setIsSending(false); // Restablecer el estado de envío incluso en caso de error
       });
     }
   };
@@ -165,33 +186,26 @@ function ContacUs() {
                 checked={formData.terms}
                 onChange={handleChange}
               />
-              <span>
-                He leído y acepto la{" "}
-                <a href="#" className="text-white underline">
-                  Política de Privacidad
-                </a>{" "}
-                y los{" "}
-                <a href="#" className="text-white underline">
-                  Términos y Condiciones
-                </a>
-              </span>
+              <label htmlFor="terms" className="text-white">
+                Acepto los términos y condiciones
+              </label>
               {errors.terms && <p className="text-red-500">{errors.terms}</p>}
             </div>
-            <div className="mt-8 flex justify-center">
+            <div className="mt-4 flex justify-center">
               <button
                 type="submit"
-                className="px-6 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600"
+                className={`w-full md:w-1/2 bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${isSending ? 'cursor-not-allowed' : ''}`}
+                disabled={isSending}
               >
-                ENVIAR
+                {isSending ? 'Enviando...' : 'Enviar'}
               </button>
             </div>
           </form>
         </div>
       </div>
-
       <Footer />
     </div>
   );
 }
 
-export default ContacUs;
+export default ContactUs;

@@ -14,7 +14,8 @@ export default {
         'content' : '#232e55',
         'banner' : '#faa307' ,
         'h1-banner': '#f8b732',
-        'cc': '#33526d;'
+        'cc': '#33526d;',
+        'btn': '#7c78b3'
         
       },
       fontFamily: {

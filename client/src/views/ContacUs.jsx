@@ -4,15 +4,15 @@ import Footer from "../components/Footer/Footer";
 import imgBanner from "../../public/img_viewQHav/slider-servicios.webp";
 import imgContact from "../../public/contactUs/contact-image.jpg";
 import { FaLocationDot } from "react-icons/fa6";
-import emailjs from "emailjs-com";
+import emailjs from 'emailjs-com';
 
 function ContacUs() {
   const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
+    fullName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
     terms: false,
   });
 
@@ -20,52 +20,39 @@ function ContacUs() {
 
   const validate = () => {
     let tempErrors = {};
-    const emailRegex = /\S+@\S+\.\S+/;
-    const phoneRegex = /^\d{10}$/; 
-    const nameRegex = /^[a-zA-Z\s]+$/;
-
-    tempErrors.fullName = nameRegex.test(formData.fullName)
-      ? ""
-      : "Nombre completo es requerido y solo debe contener letras y espacios.";
-    tempErrors.email = emailRegex.test(formData.email)
-      ? ""
-      : "Correo electrónico es inválido.";
-    tempErrors.phone = phoneRegex.test(formData.phone)
-      ? ""
-      : "Teléfono es requerido y debe ser un número de 10 dígitos.";
-    tempErrors.subject = formData.subject ? "" : "Asunto es requerido.";
-    tempErrors.message = formData.message ? "" : "Mensaje es requerido.";
-    tempErrors.terms = formData.terms
-      ? ""
-      : "Debe aceptar los términos y condiciones.";
+    tempErrors.fullName = formData.fullName ? '' : 'Nombre completo es requerido.';
+    tempErrors.email = /\S+@\S+\.\S+/.test(formData.email) ? '' : 'Correo electrónico es inválido.';
+    tempErrors.phone = formData.phone ? '' : 'Teléfono es requerido.';
+    tempErrors.subject = formData.subject ? '' : 'Asunto es requerido.';
+    tempErrors.message = formData.message ? '' : 'Mensaje es requerido.';
+    tempErrors.terms = formData.terms ? '' : 'Debe aceptar los términos y condiciones.';
     setErrors(tempErrors);
-    return Object.values(tempErrors).every((x) => x === "");
+    return Object.values(tempErrors).every((x) => x === '');
   };
 
   const handleChange = (e) => {
     const { name, value, checked } = e.target;
     setFormData({
       ...formData,
-      [name]: name === "terms" ? checked : value,
+      [name]: name === 'terms' ? checked : value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      emailjs
-        .send(
-          "YOUR_SERVICE_ID", 
-          "YOUR_TEMPLATE_ID", 
-          formData,
-          "YOUR_USER_ID" 
-        )
-        .then((response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        })
-        .catch((err) => {
-          console.error("FAILED...", err);
-        });
+      emailjs.send(
+        'service_2bvz6wb', // Reemplaza con tu service ID de EmailJS
+        'template_oacf6ns', // Reemplaza con tu template ID de EmailJS
+        formData,
+        'antivirusparaladesercion@gmail.com' // Reemplaza con tu user ID de EmailJS
+      )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.error('FAILED...', err);
+      });
     }
   };
 
@@ -145,18 +132,13 @@ function ContacUs() {
         <div className="relative">
           <img src={imgContact} className="w-full lg:w-auto" />
 
-          <div className="absolute bg-blue-links text-white bottom-0 left-0 p-4 w-full lg:w-80 text-center">
+          <div  className="absolute bg-blue-links text-white bottom-0 left-0 p-4 w-full lg:w-80 text-center">
             <div className="flex items-center justify-center gap-2">
               <p className="text-2xl font-bold">Google Maps</p>
               <FaLocationDot />
             </div>
 
-            <a
-              className="text-xl"
-              href="https://www.google.com/maps/place/Fundacion+Antivirus+para+la+Desercion/@6.1546087,-75.6316542,17z/data=!3m1!4b1!4m6!3m5!1s0x8e468164563dd5f3:0xe4f4c0dbfe0be02e!8m2!3d6.1546034!4d-75.6290793!16s%2Fg%2F11vf1_zb9j?hl=es&entry=ttu"
-            >
-              Encuéntranos aquí{" "}
-            </a>
+            <a className="text-xl" href="https://www.google.com/maps/place/Fundacion+Antivirus+para+la+Desercion/@6.1546087,-75.6316542,17z/data=!3m1!4b1!4m6!3m5!1s0x8e468164563dd5f3:0xe4f4c0dbfe0be02e!8m2!3d6.1546034!4d-75.6290793!16s%2Fg%2F11vf1_zb9j?hl=es&entry=ttu">Encuéntranos aquí </a>
           </div>
         </div>
 
@@ -185,10 +167,7 @@ function ContacUs() {
         </h3>
 
         <div className="bg-blue-links w-full h-90 mb-20 flex items-center justify-center">
-          <form
-            className="w-full h-full px-8 py-10 md:px-44 md:py-32 bg-blue-link text-white shadow-md rounded-md relative"
-            onSubmit={handleSubmit}
-          >
+          <form className="w-full h-full px-8 py-10 md:px-44 md:py-32 bg-blue-link text-white shadow-md rounded-md relative" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <input
@@ -199,9 +178,7 @@ function ContacUs() {
                   value={formData.fullName}
                   onChange={handleChange}
                 />
-                {errors.fullName && (
-                  <p className="text-red-500">{errors.fullName}</p>
-                )}
+                {errors.fullName && <p className="text-red-500">{errors.fullName}</p>}
               </div>
               <div>
                 <input
@@ -234,9 +211,7 @@ function ContacUs() {
                   value={formData.subject}
                   onChange={handleChange}
                 />
-                {errors.subject && (
-                  <p className="text-red-500">{errors.subject}</p>
-                )}
+                {errors.subject && <p className="text-red-500">{errors.subject}</p>}
               </div>
             </div>
             <div className="mt-4">
@@ -248,9 +223,7 @@ function ContacUs() {
                 value={formData.message}
                 onChange={handleChange}
               ></textarea>
-              {errors.message && (
-                <p className="text-red-500">{errors.message}</p>
-              )}
+              {errors.message && <p className="text-red-500">{errors.message}</p>}
             </div>
             <div className="mt-4 flex items-center">
               <input

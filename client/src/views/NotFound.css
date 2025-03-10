@@ -9,7 +9,7 @@
 }
 
 #errorNumber {
-  color: #7C78B3;
+  color: #33526D;
   font-size: 10rem;
   overflow: hidden;
   white-space: nowrap;
@@ -22,5 +22,5 @@
 }
 
 #volver-inicio{
-  border-color: #7C78B3;
+  border-color: #33526D;
 }

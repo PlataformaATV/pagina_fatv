@@ -1,0 +1,26 @@
+@keyframes writing {
+  0% {
+    width: 0;
+  }
+  50%,
+  100% {
+    width: 100%;
+  }
+}
+
+#errorNumber {
+  color: #33526D;
+  font-size: 10rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: writing 4s steps(40, end), blink-caret 0.75s step-end;
+  animation-iteration-count: 1;
+}
+
+#not-found {
+  background-image: url(../assets/images/views/notFound/background-not-found.webp);
+}
+
+#volver-inicio{
+  border-color: #33526D;
+}

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import BannerView from '../../components/Banner-views/BannerView';
-import aurelio from '../../../public/projects/Becarios/aurelio.jpg';
-import becariosItagui from '../../../public/projects/Becarios/becarios-itagui.jpg';
+import aurelio from '../../../public/projects/Becarios/aurelio.webp';
+import becariosItagui from '../../../public/projects/Becarios/becarios-itagui.webp';
 
 function Becarios() {
   const [becarios, setBecarios] = useState([

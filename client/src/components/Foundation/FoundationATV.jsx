@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import 'boxicons';
-import imgFB from '../../../public/img_Foundation/imgF.jpg';
-import imgF2 from '../../../public/img_Foundation/imgF2.jpg';
-import imgF3 from '../../../public/img_Foundation/imgF3.jpg';
+import imgFB from '../../../public/img_Foundation/imgF.webp';
+import imgF2 from '../../../public/img_Foundation/imgF2.webp';
+import imgF3 from '../../../public/img_Foundation/imgF3.webp';
 import OurTeam from '../ourTeam/OurTeam';
 import Footer from '../Footer/Footer';
 import "./FoundationATV.css";

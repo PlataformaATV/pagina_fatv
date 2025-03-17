@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import BannerView from "../components/Banner-views/BannerView";
-import imgContact from "../../public/contactUs/contact-image.jpg";
+import imgContact from "../../public/contactUs/contact-image.webp";
 import { FaLocationDot } from "react-icons/fa6";
 import emailjs from 'emailjs-com';
 

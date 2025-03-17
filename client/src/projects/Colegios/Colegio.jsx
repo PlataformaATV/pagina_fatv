@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import BannerView from '../../components/Banner-views/BannerView';
-import colegio1 from '../../../public/projects/Colegios/colegioItagui.JPG';
+import colegio1 from '../../../public/projects/Colegios/colegioItagui.webp';
 
 
 function Colegio() {

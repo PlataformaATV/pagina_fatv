@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import BannerView from '../../components/Banner-views/BannerView';
-import universidad1 from '../../../public/projects/universidades/udea.jpeg';
-import universidad2 from '../../../public/projects/universidades/uni-nacional.jpg';
+import universidad1 from '../../../public/projects/universidades/udea.webp';
+import universidad2 from '../../../public/projects/universidades/uni-nacional.webp';
 
 function Universidades() {
   const [universidades, setUniversidades] = useState([

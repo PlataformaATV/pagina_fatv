@@ -1,14 +1,11 @@
-import Header from "../components/Header/Header";
-import Proyects from "../components/Projects_ATV/Projects"
-
+import Proyects from "../components/Projects_ATV/Projects";
 
 function Projects_ATV() {
   return (
-    <div className='Proyects'>
-        <Header />
-        <Proyects />
+    <div className="Proyects">
+      <Proyects />
     </div>
-  )
+  );
 }
 
-export default Projects_ATV
+export default Projects_ATV;

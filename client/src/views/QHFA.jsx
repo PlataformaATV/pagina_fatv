@@ -8,7 +8,7 @@ function QHFA() {
   return (
     <>
       <div className="flex flex-col items-center justify-center">
-        <div className="relative w-full h-60 sm:h-80 md:h-96">
+        <div className="relative w-full">
           <img
             src={imgBanner}
             alt="Banner"

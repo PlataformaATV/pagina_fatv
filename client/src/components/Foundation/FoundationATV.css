@@ -223,3 +223,8 @@
 .foundation_values--content li {
   margin-bottom: 0.5rem;
 }
+
+#bannerF {
+  height: 70vh;
+  object-position: 0% 30%;
+}

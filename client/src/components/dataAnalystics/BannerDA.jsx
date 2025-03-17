@@ -3,7 +3,7 @@ import image from "/img_DataAnalytics/banner-DataAnalytics.webp";
 
 function BannerDA() {
   return (
-    <div className="relative w-full h-60 sm:h-80 md:h-96 ">
+    <div className="relative w-full">
       <img src={image} alt="Banner" className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
       <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">

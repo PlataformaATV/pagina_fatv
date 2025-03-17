@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "../components/Header/Header";
 import BannerView from "../components/Banner-views/BannerView";
 import imgContact from "../../public/contactUs/contact-image.webp";
 import { FaLocationDot } from "react-icons/fa6";
@@ -85,7 +84,6 @@ function ContactUs() {
 
   return (
     <div>
-      <Header />
       <BannerView title="Contactanos" />
       <div className="mt-20 mb-20 flex flex-col lg:flex-row justify-center items-center gap-20">
         <div className="relative">

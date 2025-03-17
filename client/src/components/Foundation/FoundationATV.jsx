@@ -18,12 +18,14 @@ function FoundationATV() {
   };
 
   return (
-    <div className="relative w-full h-60 sm:h-80 md:h-96 ">
-      <img src={imgFB} alt="Banner" className="w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
-      <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
-        NUESTRA FUNDACIÓN
-      </h1>
+    <div className="relative w-full">
+      <div className="relative">
+        <img id="bannerF" src={imgFB} alt="Banner" className="w-full object-cover " />
+        <div className="absolute inset-0 bg-blue-links bg-opacity-20"></div>
+        <h1 className="absolute inset-0 flex items-center justify-center text-banner uppercase text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-anton text-banner">
+          NUESTRA FUNDACIÓN
+        </h1>
+      </div>
       <div className="absolute bottom-4 left-4 flex space-x-2 sm:space-x-4">
         <a
           href="https://www.facebook.com/people/Fundaci%C3%B3n-Antivirus-para-la-Deserci%C3%B3n/100089714876149/?mibextid=LQQJ4d"

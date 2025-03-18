@@ -1,14 +1,11 @@
-import Header from "../components/Header/Header";
 import FoundationATV from "../components/Foundation/FoundationATV";
 
 function Foundation() {
   return (
     <div className="Foundation-container">
-        <Header />
-        <FoundationATV />
-        
+      <FoundationATV />
     </div>
-  )
+  );
 }
 
-export default Foundation
+export default Foundation;

@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./views/Home";
-import Btns from "./components/btns-wompi-and-donation/Btns";
 import DonationPay from "./views/DonationPay";
 import ContextData from "./components/ContextData/ContextData";
 import AboutUs from "./components/aboutUs/AboutUs";
@@ -20,13 +19,13 @@ import Bootcamps from "./projects/Bootcamps/Bootcamps";
 import Colegio from "./projects/Colegios/Colegio";
 import Becarios from "./projects/Becarios/Becarios";
 import NotFound from "./views/NotFound";
+import Layout from "./components/layout/Layout";
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Btns />
-        <Routes>
+      <Routes>
+        <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/DonationPay" element={<DonationPay />} />
           <Route
@@ -49,10 +48,10 @@ function App() {
           <Route path="/Bootcamps" element={<Bootcamps />} />
           <Route path="/Becarios" element={<Becarios />} />
           <Route path="/Colegios" element={<Colegio />} />
+        </Route>
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </BrowserRouter>
   );
 }

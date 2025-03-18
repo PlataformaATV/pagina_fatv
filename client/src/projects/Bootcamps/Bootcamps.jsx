@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import BannerView from '../../components/Banner-views/BannerView';
-import nodo from '../../../public/projects/Bootcamps/ne.jpeg';
+import nodo from '../../../public/projects/Bootcamps/ne.webp';
 import codigoc13 from '../../../public/projects/Bootcamps/codigoc13.jpg';
 
 function Bootcamps() {

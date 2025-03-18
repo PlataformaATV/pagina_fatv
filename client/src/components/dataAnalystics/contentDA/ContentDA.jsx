@@ -21,7 +21,7 @@ function ContentDA() {
         </div>
         <div className="content-image">
           <img
-            src="/img_DataAnalytics/data-analytics-image.jpg"
+            src="/img_DataAnalytics/data-analytics-image.webp"
             alt="Data Analytics"
           />
         </div>

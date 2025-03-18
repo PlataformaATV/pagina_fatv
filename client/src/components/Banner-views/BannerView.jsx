@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
-import imgBannerATV from '../../../public/img_DataAnalytics/banner-DataAnalytics.jpg'
+import imgBannerATV from '../../../public/img_DataAnalytics/banner-DataAnalytics.webp'
 import { useState } from 'react'
 
 

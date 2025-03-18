@@ -6,9 +6,9 @@ const ServicesATV = () => {
   const [startIndex, setStartIndex] = useState(0);
 
   const imgs = [
-    '/img_services/services1.jpg',
-    '/img_services/services2.jpg',
-    '/img_services/services3.jpg',
+    '/img_services/services1.webp',
+    '/img_services/services2.webp',
+    '/img_services/services3.webp',
   ];
 
   useEffect(() => {

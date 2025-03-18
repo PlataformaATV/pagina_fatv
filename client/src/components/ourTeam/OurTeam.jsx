@@ -72,12 +72,12 @@ const cards = [
   {
     name: "astrid franco",
     role: "Coordinadora Área Social",
-    image: "/img_OurTeam/AstridFranco.jpg",
+    image: "/img_OurTeam/AstridFranco.webp",
   },
   {
     name: "luis fernando sánchez",
     role: "Director",
-    image: "/img_OurTeam/LuisSanchez.jpeg",
+    image: "/img_OurTeam/LuisSanchez.webp",
   },
   {
     name: "karen gonzález",
@@ -97,17 +97,17 @@ const cards = [
   {
     name: "david santiago botero",
     role: "Coordinador Área Legal",
-    image: "/img_OurTeam/DavidBotero.jpeg",
+    image: "/img_OurTeam/DavidBotero.webp",
   },
   {
     name: "daniela correa",
     role: "Coordinadora Área Comunicaciones",
-    image: "/img_OurTeam/DanielaCorrea.jpeg",
+    image: "/img_OurTeam/DanielaCorrea.webp",
   },
   {
     name: "luis fernando gonzález",
     role: "Coordinador Área Administrativa y Financiera",
-    image: "/img_OurTeam/LuisGonzales.jpg",
+    image: "/img_OurTeam/LuisGonzales.webp",
   },
 ];
 

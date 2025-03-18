@@ -3,8 +3,8 @@ import Header from '../components/Header/Header'
 import Footer  from '../components/Footer/Footer'
 import imgBanner from '../../public/img_viewQHav/slider-servicios.webp'
 import emocinal1 from '../../public/img_viewQHav/sociopedagogical-image-1.jpg'
-import emocinal2 from '../../public/img_viewQHav/sociopedagogical-image-2.jpg'
-import emocional3 from '../../public/img_viewQHav/sociopedagogical-image-3.jpg'
+import emocinal2 from '../../public/img_viewQHav/sociopedagogical-image-2.webp'
+import emocional3 from '../../public/img_viewQHav/sociopedagogical-image-3.webp'
 
 
 function QHFA() {

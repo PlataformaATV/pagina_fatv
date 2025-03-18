@@ -3,7 +3,7 @@ import Header from '../components/Header/Header'
 import Footer  from '../components/Footer/Footer'
 import imgBanner from '../../public/services_imgs/banner-services.jpg'
 import imgServices2 from '../../public/services_imgs/services-img2.jpg'
-import emocional3 from '../../public/img_viewQHav/sociopedagogical-image-3.jpg'
+import emocional3 from '../../public/img_viewQHav/sociopedagogical-image-3.webp'
 
 
 function ApoyoAcademico() {

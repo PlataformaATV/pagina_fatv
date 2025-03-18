@@ -1,5 +1,5 @@
 import "./BannerDA.css";
-import image from "/img_DataAnalytics/banner-DataAnalytics.jpg";
+import image from "/img_DataAnalytics/banner-DataAnalytics.webp";
 
 function BannerDA() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.css'
 import Footer from '../Footer/Footer';
-import imgBannerATV from '../../../public/img_DataAnalytics/banner-DataAnalytics.jpg'
+import imgBannerATV from '../../../public/img_DataAnalytics/banner-DataAnalytics.webp'
 import { useState, useEffect } from 'react';
 
 

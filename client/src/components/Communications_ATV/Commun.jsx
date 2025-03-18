@@ -1,7 +1,7 @@
 import React from 'react';
 import './Commun.css'
 import Footer from '../Footer/Footer';
-import imgBannerATV from '../../../public/img_DataAnalytics/banner-DataAnalytics.jpg'
+import imgBannerATV from '../../../public/img_DataAnalytics/banner-DataAnalytics.webp'
 
 
 function Commun() {
@@ -82,7 +82,7 @@ function Commun() {
             </div>
             <div className='data_analytics--image'>
               <picture>
-                <img src="../../../public/img_Communications/comunications_1.jpg" alt="" />
+                <img src="../../../public/img_Communications/comunications_1.webp" alt="" />
               </picture>
             </div>
           </div>

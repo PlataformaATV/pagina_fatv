@@ -30,7 +30,7 @@ function Carousel() {
     >
       <SwiperSlide>
         <img
-          className="h-[80vh] object-cover object-[50%_33%] w-full"
+          className="h-[86vh] object-cover object-[50%_33%] w-full"
           src={banner1}
           alt="Slide 1"
         />
@@ -46,7 +46,7 @@ function Carousel() {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          className="h-[80vh] object-cover object-[50%_33%] w-full"
+          className="h-[86vh] object-cover object-[50%_33%] w-full"
           src={banner3}
           alt="Slide 3"
         />
@@ -62,7 +62,7 @@ function Carousel() {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          className="h-[80vh] object-cover object-[50%_33%] w-full"
+          className="h-[86vh] object-cover object-[50%_33%] w-full"
           src={banner5}
           alt="Slide 5"
         />
@@ -78,7 +78,7 @@ function Carousel() {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          className="h-[80vh] object-cover object-[50%_33%] w-full"
+          className="h-[86vh] object-cover object-[50%_33%] w-full"
           src={banner6}
           alt="Slide 6"
         />
@@ -94,7 +94,7 @@ function Carousel() {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          className="h-[80vh] object-cover object-[50%_33%] w-full"
+          className="h-[86vh] object-cover object-[50%_33%] w-full"
           src={banner7}
           alt="Slide 7"
         />
@@ -110,7 +110,7 @@ function Carousel() {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          className="h-[80vh] object-cover object-[50%_33%] w-full"
+          className="h-[86vh] object-cover object-[50%_33%] w-full"
           src={banner8}
           alt="Slide 8"
         />

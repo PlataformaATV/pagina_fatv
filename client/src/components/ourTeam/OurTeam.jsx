@@ -38,7 +38,7 @@ function OurTeam() {
   return (
     <div className="OurTeam-block">
       <div className="OurTeam-block-title">
-        <h3>sobre nuestro <br/>equipo</h3>
+        <h3 className="text-5xl font-extrabold  text-title" >sobre nuestro <br/>equipo</h3>
       </div>
       <div className="OurTeam">
         <div className="cards">

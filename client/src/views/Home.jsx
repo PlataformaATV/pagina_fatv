@@ -10,10 +10,10 @@ function Home() {
     <div>
       <Banner />
       <AboutUs />
-      <ServicesATV />
-      <OurTeam />
       <ContextData />
       <OurAllies />
+      <ServicesATV />
+      <OurTeam />
     </div>
   );
 }
